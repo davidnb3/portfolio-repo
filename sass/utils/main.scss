@@ -1,3 +1,6 @@
+$primary: #FFB300;
+$secondary: #2D2D2D;
+
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +11,14 @@ body {
   display: flex;
   flex-direction: row;
   font-family: Ebrima, Arial, sans-serif;
-  color: #2D2D2D;
+  color: $secondary;
   text-align: justify;
 }
 
 aside {
   width: 35%;
   padding-top: 45px;
-  background-color: #FFB300;
+  background-color: $primary;
   img {
     display: block;
     border-radius: 120px;
@@ -24,73 +27,65 @@ aside {
   }
   h2 {
     text-align: center;
-    color: #FFB300;
-    background: #2D2D2D;
+    color: $primary;
+    background: $secondary;
     font-weight: 500;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   section {
     display: flex;
     flex-direction: column;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 20px;
+    &:nth-last-of-type(1) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &:nth-of-type(2) {
+      margin-bottom: 120%;
+    }
   }
 }
 
 .contact-details {
   margin-bottom: 15px;
-}
-
-.contact-details a {
-  margin-right: 5px;
-  text-decoration: none;
-  color: #2D2D2D;
-}
-
-a:hover {
-  color: #FFB300;
-  text-shadow: 1px 1px 3px #2D2D2D;
-}
-
-a:active{
-  text-decoration: overline;
-  text-shadow: 3px 3px 8px #2D2D2D;
-}
-
-aside section:nth-last-of-type(1) {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-aside section:nth-of-type(2) {
-  margin-bottom: 100%;
+  a {
+    margin-right: 5px;
+    text-decoration: none;
+    color: $secondary;
+    &:hover {
+      color: $primary;
+      text-shadow: 1px 1px 3px $secondary;
+    }
+    &:active{
+      text-decoration: overline;
+      text-shadow: 3px 3px 8px $secondary;
+    }
+  }
 }
 
 main {
   margin-top: 80px;
   margin-left: 80px;
   width: 50%;
-}
-
-main h1 {
-  font-size: 3em;
-  font-weight: lighter;
-  font-family: "Courier New", Courier, monospace;
-  margin-bottom: 15px;
-}
-
-h1 strong {
-  color: #FFB300;
-  font-weight: bold;
+  h1 {
+    font-size: 3em;
+    font-weight: lighter;
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 15px;
+    strong {
+      color: $primary;
+      font-weight: bold;
+    }
+  }
 }
 
 span h2 {
   font-weight: normal;
   font-size: 1.3em;
-  border-top: 2px solid #FFB300;
+  border-top: 2px solid $primary;
   padding-top: 5px;
   display: inline-block;
   margin-bottom: 12%;
@@ -98,7 +93,7 @@ span h2 {
 
 .main-header {
   font-weight: normal;
-  border-bottom: 2px solid #FFB300;
+  border-bottom: 2px solid $primary;
   padding-bottom: 5px;
   font-size: 1.3em;
 }
@@ -110,46 +105,38 @@ h3 span {
 .main-container {
   display: flex;
   flex-direction: row;
-}
-
-.main-container__years {
-  flex: 1;
-}
-
-.main-container__details {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__years {
+    flex: 1;
+  }
+  &__details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  article {
+    margin-top: 25px;
+    * {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 section article {
   margin: 25px 0px 25px 0px;
 }
 
-article * {
-  margin-bottom: 5px;
-}
-
 ul {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-ul:first-child {
-  margin-top: 25px;
-}
-
-li {
-  flex: 1;
-}
-
-.grid-container {
-  margin-top: 10px;
-  display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
-  grid-gap: 20px;
-  font-size: 1.1em;
+  &:first-child {
+    margin-top: 25px;
+  }
+  li {
+    flex: 1;
+  }
 }
 
 
@@ -197,4 +184,5 @@ li {
   }
   aside img {
     width: 30%;
+  }
 }
