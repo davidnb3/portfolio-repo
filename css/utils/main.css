@@ -14,27 +14,24 @@ aside {
   width: 35%;
   padding-top: 45px;
   background-color: #FFB300; }
-
-aside img {
-  display: block;
-  border-radius: 120px;
-  margin: auto;
-  width: 40%; }
-
-aside h2 {
-  text-align: center;
-  color: #FFB300;
-  background: #2D2D2D;
-  font-weight: 500;
-  margin-top: 40px;
-  margin-bottom: 30px; }
-
-aside section {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 20px; }
+  aside img {
+    display: block;
+    border-radius: 120px;
+    margin: auto;
+    width: 40%; }
+  aside h2 {
+    text-align: center;
+    color: #FFB300;
+    background: #2D2D2D;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  aside section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px; }
 
 .contact-details {
   margin-bottom: 15px; }
