@@ -10,6 +10,12 @@ body {
   color: #2D2D2D;
   text-align: justify; }
 
+.main-header {
+  font-weight: normal;
+  border-bottom: 2px solid #FFB300;
+  padding-bottom: 5px;
+  font-size: 1.3em; }
+
 aside {
   width: 35%;
   padding-top: 45px;
@@ -63,23 +69,13 @@ main {
     main h1 strong {
       color: #FFB300;
       font-weight: bold; }
-
-span h2 {
-  font-weight: normal;
-  font-size: 1.3em;
-  border-top: 2px solid #FFB300;
-  padding-top: 5px;
-  display: inline-block;
-  margin-bottom: 12%; }
-
-.main-header {
-  font-weight: normal;
-  border-bottom: 2px solid #FFB300;
-  padding-bottom: 5px;
-  font-size: 1.3em; }
-
-h3 span {
-  margin-right: 20px; }
+  main h2 {
+    font-weight: normal;
+    font-size: 1.3em;
+    border-top: 2px solid #FFB300;
+    padding-top: 5px;
+    display: inline-block;
+    margin-bottom: 12%; }
 
 .main-container {
   display: flex;
@@ -96,6 +92,9 @@ h3 span {
     margin-top: 25px; }
     .main-container article * {
       margin-bottom: 10px; }
+
+h3 span {
+  margin-right: 20px; }
 
 section article {
   margin: 25px 0px 25px 0px; }
