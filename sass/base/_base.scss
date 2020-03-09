@@ -5,9 +5,14 @@
 }
 
 body {
+  font-family: Ebrima, Arial, sans-serif;
+  color: #2D2D2D;
+  text-align: justify;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   flex-direction: row;
-  font-family: Ebrima, Arial, sans-serif;
-  color: $secondary;
-  text-align: justify;
 }
