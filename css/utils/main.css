@@ -129,6 +129,7 @@ h3 span {
   flex-direction: column;
   line-height: 20px; }
 
+/* nesting media queries yes or no? */
 @media screen and (max-width: 420px) {
   .page-container {
     max-width: 100%;

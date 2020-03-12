@@ -3,6 +3,7 @@
 @import '../layout/main-layout.scss';
 @import '../components/components.scss';
 
+/* nesting media queries yes or no? */
 
 @media screen and (max-width: 420px) {
   .page-container {
