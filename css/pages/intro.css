@@ -1,0 +1,19 @@
+body {
+  background-image: url(../../images/paint.jpg);
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-repeat: repeat-y; }
+
+.page-container {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 1400px;
+  margin: auto; }
+
+.container {
+  max-width: 1200px; }
+
+main {
+  max-width: 800px; }
+
+/*# sourceMappingURL=intro.css.map */

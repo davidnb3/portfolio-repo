@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Ebrima, Arial, sans-serif;
+  color: #2D2D2D;
+  text-align: justify; }
+
+.page-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row; }
+
+aside {
+  width: 35%;
+  padding-top: 45px;
+  background-color: #FFB300;
+  position: relative; }
+  aside img {
+    display: block;
+    border-radius: 200px;
+    margin: auto;
+    width: 40%; }
+  aside section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px; }
+    aside section h2 {
+      text-align: center;
+      color: #FFB300;
+      background: #2D2D2D;
+      font-weight: 500;
+      margin: 40px -20px 40px -20px;
+      text-transform: uppercase; }
+    aside section:last-of-type {
+      position: absolute;
+      bottom: 40px;
+      right: 0px;
+      left: 0px; }
+    aside section ul {
+      margin: 0 auto; }
+    aside section li {
+      margin: 20px 20px 20px 20px; }
+
+.contact-details {
+  margin-bottom: 20px; }
+  .contact-details p:nth-child(2) {
+    font-weight: bold; }
+  .contact-details li {
+    display: inline;
+    margin-left: 0px;
+    margin-right: 5px;
+    font-weight: bold; }
+  .contact-details a {
+    text-decoration: none;
+    color: #2D2D2D; }
+    .contact-details a:hover {
+      color: #FFB300;
+      text-shadow: 1px 1px 3px #2D2D2D; }
+    .contact-details a:active {
+      text-decoration: overline;
+      text-shadow: 3px 3px 8px #2D2D2D; }
+
+header h1 {
+  font-size: 3em;
+  font-weight: lighter;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 15px; }
+  header h1 strong {
+    color: #FFB300;
+    font-weight: bold; }
+header h2 {
+  font-weight: normal;
+  font-size: 1.3em;
+  border-top: 2px solid #FFB300;
+  padding-top: 5px;
+  display: inline-block;
+  margin-bottom: 12%; }
+
+main {
+  margin-top: 80px;
+  margin-left: 60px;
+  width: 55%; }
+  main section ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 20px; }
+  main section li {
+    flex: 1; }
+  main article {
+    margin: 20px 0px 20px 0px; }
+    main article * {
+      margin-bottom: 5px; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .container > h3 {
+    font-weight: normal;
+    border-bottom: 2px solid #FFB300;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+    text-transform: uppercase; }
+  .container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .container .references {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+
+h3 span {
+  margin-right: 20px; }
+
+.container-list {
+  flex: 1; }
+
+.container-details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  line-height: 20px; }
+
+@media screen and (max-width: 420px) {
+  .page-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; }
+
+  aside {
+    width: 100%;
+    margin: 160px 0px 20px 0px; }
+
+  aside section:nth-of-type(2) {
+    margin-bottom: 220px; }
+
+  main {
+    width: 95%;
+    margin: 10px; }
+
+  header {
+    position: absolute;
+    top: 20px; }
+
+  .container .references {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+@media screen and (max-width: 780px) and (min-width: 421px) {
+  .page-container {
+    display: flex;
+    flex-direction: column; }
+
+  aside {
+    width: 100%;
+    margin: 160px 0px 10px 0px; }
+
+  aside section:nth-of-type(2) {
+    margin-bottom: 220px; }
+
+  main {
+    width: 90%;
+    margin: 10px; }
+
+  header {
+    position: absolute;
+    top: 20px; }
+
+  .container .references {
+    display: flex;
+    flex-direction: row;
+    align-items: center; } }
+@media screen and (max-width: 326px) {
+  .page-container {
+    display: flex;
+    flex-direction: column; }
+
+  aside {
+    width: 100%;
+    margin: 200px 0px 10px 0px; }
+
+  aside section:nth-of-type(2) {
+    margin-bottom: 300px; }
+
+  main {
+    width: 90%;
+    margin: 10px; }
+
+  .container .references {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+/*# sourceMappingURL=resume.css.map */
