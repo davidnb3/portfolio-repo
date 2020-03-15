@@ -1,8 +1,10 @@
 body {
   background-image: url(../../images/paint.jpg);
-  background-repeat: no-repeat;
   background-size: 1600px;
-  background-repeat: repeat-y; }
+  background-repeat: repeat-y;
+  background-color: orange;
+  font-size: 1.5em;
+  font-family: 'Baloo 2', cursive; }
 
 .page-container {
   background-color: white;
@@ -11,9 +13,20 @@ body {
   margin: auto; }
 
 .container {
-  max-width: 1200px; }
+  max-width: 1200px;
+  margin: 20px; }
 
 main {
-  max-width: 800px; }
+  max-width: 800px;
+  padding-top: 210px; }
+
+nav ul {
+  list-style: none;
+  float: right; }
+nav li {
+  display: inline; }
+
+iframe {
+  max-width: 600px; }
 
 /*# sourceMappingURL=intro.css.map */
