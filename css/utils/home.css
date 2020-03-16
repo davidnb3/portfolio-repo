@@ -1,0 +1,53 @@
+body {
+  background-image: url(../../images/paint.jpg);
+  background-size: 1600px;
+  background-repeat: repeat-y;
+  background-color: orange;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif; }
+
+.page-container {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 1400px;
+  margin: auto; }
+
+.container {
+  margin: 40px; }
+
+main {
+  max-width: 1000px;
+  padding-top: 80px;
+  padding-left: 120px; }
+  @media screen and (max-width: 1024px) {
+    main {
+      padding-right: 10px; } }
+  main > div {
+    margin-bottom: 460px;
+    border: solid 3px orange;
+    border-radius: 20px;
+    padding: 180px 0 180px 60px; }
+    main > div h1, main > div h2, main > div p {
+      margin-left: 30px;
+      margin-right: 60px; }
+
+nav {
+  position: fixed;
+  left: -160px;
+  top: 390px;
+  transform: rotate(-90deg); }
+  @media screen and (max-width: 1024px) {
+    nav {
+      left: -200px; } }
+  nav ul {
+    list-style: none; }
+  nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+    padding-left: 5px;
+    border-left: solid 3px orange; }
+
+iframe {
+  max-width: 600px; }
+
+/*# sourceMappingURL=home.css.map */
