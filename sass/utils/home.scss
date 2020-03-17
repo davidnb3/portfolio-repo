@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-image: url(../../images/paint.jpg);
   background-size: 1600px;
@@ -7,6 +12,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .page-container {
   background-color: white;
   border-radius: 20px;
@@ -35,12 +43,15 @@ main {
       margin-right: 60px;
     }
   }
+  .project-grid, .music-grid {
+    padding: 80px 0 80px 60px;
+  }
 }
 
 nav {
   position: fixed;
   left: -160px;
-  top: 390px;
+  top: 350px;
   transform: rotate(-90deg);
   @media screen and (max-width: 1024px) {
     left: -200px;
@@ -56,6 +67,14 @@ nav {
   }
 }
 
+img {
+  height: 300px;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+}
 iframe {
   max-width: 600px;
 }
