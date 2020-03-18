@@ -17,7 +17,7 @@ html {
 .page-container {
   background-color: white;
   border-radius: 20px;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto; }
 
 .container {
@@ -27,9 +27,6 @@ main {
   max-width: 1000px;
   padding-top: 80px;
   padding-left: 120px; }
-  @media screen and (max-width: 1024px) {
-    main {
-      padding-right: 10px; } }
   main > div {
     margin-bottom: 460px;
     border: solid 3px orange;
@@ -41,21 +38,14 @@ main {
   main .project-grid, main .music-grid {
     padding: 80px 0 80px 60px; }
 
-nav {
-  position: fixed;
-  left: -160px;
-  top: 350px;
-  transform: rotate(-90deg); }
-  @media screen and (max-width: 1024px) {
-    nav {
-      left: -200px; } }
-  nav ul {
-    list-style: none; }
-  nav li {
-    display: inline;
-    margin: 0 0 0 20px;
-    padding-left: 5px;
-    border-left: solid 3px orange; }
+nav ul {
+  list-style: none; }
+nav li {
+  display: inline;
+  margin: 0 0 0 20px;
+  padding-left: 8px;
+  padding-top: 8px;
+  border-left: solid 3px orange; }
 
 img {
   height: 300px; }

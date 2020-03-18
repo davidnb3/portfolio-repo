@@ -18,7 +18,7 @@ html {
 .page-container {
   background-color: white;
   border-radius: 20px;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -30,9 +30,6 @@ main {
   max-width: 1000px;
   padding-top: 80px;
   padding-left: 120px;
-  @media screen and (max-width: 1024px) {
-    padding-right: 10px;
-  }
   > div {
     margin-bottom: 460px;
     border: solid 3px orange;
@@ -49,20 +46,14 @@ main {
 }
 
 nav {
-  position: fixed;
-  left: -160px;
-  top: 350px;
-  transform: rotate(-90deg);
-  @media screen and (max-width: 1024px) {
-    left: -200px;
-  }
   ul {
     list-style: none;
   }
   li {
     display: inline;
     margin: 0 0 0 20px;
-    padding-left: 5px;
+    padding-left: 8px;
+    padding-top: 8px;
     border-left: solid 3px orange;
   }
 }
