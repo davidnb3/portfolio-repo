@@ -11,9 +11,6 @@ body {
   font-size: 1.5em;
   font-family: 'Montserrat', sans-serif; }
 
-html {
-  scroll-behavior: smooth; }
-
 .page-container {
   background-color: white;
   border-radius: 20px;
@@ -57,4 +54,4 @@ figure {
 iframe {
   max-width: 600px; }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=main.css.map */

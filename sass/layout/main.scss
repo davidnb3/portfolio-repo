@@ -12,9 +12,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 .page-container {
   background-color: white;
   border-radius: 20px;
@@ -31,7 +28,7 @@ main {
   padding-top: 80px;
   padding-left: 120px;
   > div {
-    margin-bottom: 460px;
+    margin-bottom: 120px;
     border: solid 3px orange;
     border-radius: 20px;
     padding: 180px 0 180px 60px;
