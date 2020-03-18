@@ -32,8 +32,9 @@ nav {
   }
   li {
     display: inline;
-    padding-left: 8px;
-    border-left: solid 3px orange;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-bottom: solid 3px orange;
   }
   a {
     text-decoration: none;
@@ -41,15 +42,18 @@ nav {
 }
 
 footer {
+  overflow: hidden;
   ul {
     list-style: none;
     padding-bottom: 40px;
     padding-right: 60px;
+    float: right;
     font-size: 0.7em;
   }
   li {
     display: inline;
-    padding-left: 8px;
-    border-left: solid 3px orange;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-bottom: solid 3px orange;
   }
 }
