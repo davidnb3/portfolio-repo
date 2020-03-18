@@ -20,34 +20,26 @@ body {
 
 
 main {
-  max-width: 1000px;
-  padding-top: 80px;
-  padding-left: 120px;
   > div {
-    margin-bottom: 120px;
-    border: solid 3px orange;
-    border-radius: 20px;
-    padding: 180px 0 180px 60px;
-    h1, h2, p {
-      margin-left: 30px;
-      margin-right: 60px;
-    }
-  }
-  .project-grid, .music-grid {
-    padding: 80px 0 80px 60px;
+    padding: 240px 0 20px 100px;
   }
 }
 
 nav {
   ul {
     list-style: none;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-right: 60px;
     float: right;
+    font-size: 0.7em;
   }
   li {
     display: inline;
     padding-left: 8px;
     border-left: solid 3px orange;
+  }
+  a {
+    text-decoration: none;
   }
 }
 

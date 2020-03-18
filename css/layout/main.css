@@ -16,29 +16,21 @@ body {
   margin: 40px;
   border-radius: 10px; }
 
-main {
-  max-width: 1000px;
-  padding-top: 80px;
-  padding-left: 120px; }
-  main > div {
-    margin-bottom: 120px;
-    border: solid 3px orange;
-    border-radius: 20px;
-    padding: 180px 0 180px 60px; }
-    main > div h1, main > div h2, main > div p {
-      margin-left: 30px;
-      margin-right: 60px; }
-  main .project-grid, main .music-grid {
-    padding: 80px 0 80px 60px; }
+main > div {
+  padding: 240px 0 20px 100px; }
 
 nav ul {
   list-style: none;
-  padding-top: 20px;
-  float: right; }
+  padding-top: 40px;
+  padding-right: 60px;
+  float: right;
+  font-size: 0.7em; }
 nav li {
   display: inline;
   padding-left: 8px;
   border-left: solid 3px orange; }
+nav a {
+  text-decoration: none; }
 
 img {
   height: 300px; }
