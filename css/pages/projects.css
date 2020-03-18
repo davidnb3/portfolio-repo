@@ -1,3 +1,8 @@
+figure {
+  display: flex;
+  align-items: center; }
 
+img {
+  height: 250px; }
 
 /*# sourceMappingURL=projects.css.map */

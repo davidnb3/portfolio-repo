@@ -11,20 +11,17 @@ body {
   font-size: 1.5em;
   font-family: 'Montserrat', sans-serif;
 }
-
 .page-container {
   background-color: white;
   margin: 40px;
   border-radius: 10px;
 }
 
-
 main {
   > div {
-    padding: 240px 0 20px 100px;
+    padding: 240px 0 20px 240px;
   }
 }
-
 nav {
   ul {
     list-style: none;
@@ -43,14 +40,16 @@ nav {
   }
 }
 
-img {
-  height: 300px;
-}
-
-figure {
-  display: flex;
-  align-items: center;
-}
-iframe {
-  max-width: 600px;
+footer {
+  ul {
+    list-style: none;
+    padding-bottom: 40px;
+    padding-right: 60px;
+    font-size: 0.7em;
+  }
+  li {
+    display: inline;
+    padding-left: 8px;
+    border-left: solid 3px orange;
+  }
 }
