@@ -1,13 +1,18 @@
 main p {
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  line-height: 30px; }
 main .home h2 {
-  border-bottom: solid 5px #FF8C00;
-  border-radius: 10px;
-  padding: 10px 0 10px 0;
-  margin-bottom: 10px;
+  line-height: 80px;
   display: inline-block; }
 main .project {
-  padding-bottom: 120px; }
+  padding: 20px 0 40px 0;
+  margin: 40px 0 80px 0;
+  border-bottom: solid 5px #FF8C00;
+  border-radius: 10px;
+  border-top: solid 5px #FF8C00;
+  border-radius: 10px; }
+  main .project h2 {
+    margin-bottom: 40px; }
 
 figure {
   display: flex;
@@ -15,5 +20,8 @@ figure {
 
 img {
   height: 250px; }
+
+iframe {
+  max-width: 600px; }
 
 /*# sourceMappingURL=home.css.map */

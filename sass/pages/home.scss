@@ -1,28 +1,25 @@
 @import '../utils/mixins.scss';
+@import '../utils/variables.scss';
 
 main {
   p {
     font-size: 0.8em;
+    line-height: 30px;
   }
   .home h2 {
-    @include border-bottom;
-    padding: 10px 0 10px 0;
-    margin-bottom: 10px;
+    line-height: 80px;
     display: inline-block;
   }
   .project {
-    padding-bottom: 120px;
+    padding: 20px 0 40px 0;
+    margin: 40px 0 80px 0;
+    @include border-bottom;
+    @include border-top;
+    h2 {
+      margin-bottom: 40px;
+    }
   }
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -33,4 +30,8 @@ figure {
 
 img {
   height: 250px;
+}
+
+iframe {
+  max-width: 600px;
 }
