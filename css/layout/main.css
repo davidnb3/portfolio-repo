@@ -17,7 +17,8 @@ body {
   border-radius: 10px; }
 
 main > div {
-  padding: 240px 0 20px 240px; }
+  padding: 280px 0 20px 180px;
+  max-width: 1000px; }
 
 nav ul {
   list-style: none;

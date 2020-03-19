@@ -1,4 +1,15 @@
+@import '../utils/mixins.scss';
+
 main {
+  p {
+    font-size: 0.8em;
+  }
+  .home h2 {
+    @include border-bottom;
+    padding: 10px 0 10px 0;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
   .project {
     padding-bottom: 120px;
   }
