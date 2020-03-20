@@ -1,9 +1,17 @@
 @mixin border-bottom {
   border-bottom: solid 5px #FF8C00;
-  border-radius: 10px;
 }
 
 @mixin border-top {
   border-top: solid 5px #FF8C00;
-  border-radius: 10px;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
 }
