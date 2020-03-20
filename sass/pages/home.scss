@@ -30,10 +30,8 @@ main {
 
 article {
   @include column;
-  p {
-    width: 20px;
-    display: table;
-  }
+  max-width: 200px;
+  word-break: break-all;
 }
 
 figure {
