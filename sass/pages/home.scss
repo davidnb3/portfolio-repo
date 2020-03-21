@@ -2,7 +2,7 @@
 @import '../utils/variables.scss';
 
 header {
-  margin: 140px 0 260px 0;
+  margin: 140px 0 300px 0;
   line-height: 60px;
   h1 {
     font-size: 3.5em;
@@ -13,25 +13,53 @@ header {
   }
 }
 
+main {
+  width: 100%;
+}
 
-
+.flex-container {
+  @include row;
+  width: 600px;
+  h3 {
+    margin-right: 10px;
+  }
+  hr {
+    width: 100%;
+    height: 2px;
+    margin: auto;
+  }
+}
+section {
+  @include row;
+  justify-content: space-between;
+}
 article {
   @include column;
-  max-width: 200px;
-  word-break: break-all;
+  max-width: 460px;
+  h3 {
+    margin-top: 60px;
+    line-height: 28px;
+  }
+  p {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 22px;
+  }
 }
 
 figure {
+  position: relative;
+  bottom: 200px;
   @include column;
   align-items: center;
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+  }
 }
 
-
-img {
-  height: 200px;
-}
-
-iframe {
-  height: 200px;
-  width: 250px;
-}
+button {
+    width: 100%;
+    margin: 0 auto;
+  }
