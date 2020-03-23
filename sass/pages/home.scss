@@ -1,17 +1,6 @@
 @import '../utils/mixins.scss';
 @import '../utils/variables.scss';
 
-header {
-  margin: 140px 0 300px 0;
-  line-height: 60px;
-  h1 {
-    font-size: 3.5em;
-  }
-  h2 {
-    font-size: 1.6em;
-    letter-spacing: 3px;
-  }
-}
 
 .flex-container {
   @include row;
