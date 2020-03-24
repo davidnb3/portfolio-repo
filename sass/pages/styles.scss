@@ -1,18 +1,6 @@
 @import '../utils/mixins.scss';
 @import '../utils/variables.scss';
 
-header {
-  margin: 140px 0 300px 0;
-  line-height: 60px;
-  h1 {
-    font-size: 3.5em;
-  }
-  h2 {
-    font-size: 1.6em;
-    letter-spacing: 3px;
-  }
-}
-
 .flex-container {
   @include row;
   width: 600px;
@@ -82,7 +70,7 @@ header {
   justify-content: space-between;
   article {
     max-width: 460px;
-    height: 543.5px;
+    height: 523.5px;
     h3 {
       margin-top: 100px;
       line-height: 28px;
