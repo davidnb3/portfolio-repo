@@ -16,8 +16,6 @@ body {
 .container {
   margin: auto;
   max-width: 1100px;
-  position: relative;
-  z-index: 1;
 }
 
 header {
@@ -27,8 +25,7 @@ header {
   line-height: 60px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/background.jpg);
   background-size: cover;
-  background-position: 0 -140px;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   h1 {
     font-size: 3.5em;
     margin-top: 140px;
