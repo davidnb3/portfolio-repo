@@ -1,19 +1,45 @@
-@mixin column {
+@mixin column ($direction: column){
   display: flex;
-  flex-direction: column;
+  flex-direction: $direction;
 }
 
-@mixin column-rev {
+@mixin row ($direction: row){
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: $direction;
 }
 
-@mixin row {
-  display: flex;
-  flex-direction: row;
+
+@mixin header {
+  header {
+    padding-bottom: 300px;
+    margin-bottom: 80px;
+  }
 }
 
-@mixin row-rev {
-  display: flex;
-  flex-direction: row-reverse;
+@mixin figcaption ($direction: row, $top: 60px){
+  @if (($direction) == row) {
+    position: relative;
+    top: $top;
+    right: 640px;
+  }
+  @else {
+    position: relative;
+    top: $top;
+    left: 500px;
+  }
+}
+
+@mixin hidden {
+  .overflow-container {
+    overflow: hidden;
+  }
+}
+
+@mixin iframe {
+  iframe {
+    position: relative;
+    bottom: 3px;
+    height: 560px;
+    width: 460px;
+  }
 }

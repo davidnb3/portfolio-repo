@@ -18,7 +18,7 @@
     border: solid 1px $second-color;
   }
 }
-.first-section {
+.project-section {
   @include row;
   justify-content: space-between;
   article {
@@ -45,11 +45,11 @@
   align-items: flex-end;
   img {
     max-width: 100%;
-    height: auto;
+    height: 560px;
     margin-bottom: 100px;
   }
   figcaption {
-    @include row-rev;
+    @include row (row-reverse);
     width: 600px;
     white-space: nowrap;
     color: $second-color;
@@ -67,12 +67,12 @@
   }
 }
 
-.second-section {
-  @include row-rev;
+.music-section {
+  @include row (row-reverse);
   justify-content: space-between;
   article {
     max-width: 460px;
-    max-height: 543px;
+    max-height: 583px;
     h3 {
       margin-top: 140px;
       line-height: 28px;
@@ -96,7 +96,7 @@
   iframe {
     position: relative;
     bottom: 3px;
-    height: 520px;
+    height: 560px;
     margin-bottom: 80px;
   }
   figcaption {
