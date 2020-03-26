@@ -1,0 +1,27 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+@include header;
+
+
+form {
+  @include row;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  div {
+    max-width: 460px;
+    height: 540px;
+    @include column;
+  }
+}
+
+.details {
+  margin-right: 60px;
+  label {
+    width: 260px;
+  }
+}
+
+.message label {
+  width: 360px;
+}
