@@ -29,6 +29,23 @@
   }
 }
 
+@mixin hr ($position: left) {
+  @if (($position) == left) {
+    width: 100%;
+    height: 2px;
+    margin: auto;
+    margin-left: 10px;
+    border: solid 1px $second-color;
+  }
+  @else {
+    width: 100%;
+    height: 2px;
+    margin: auto;
+    margin-right: 10px;
+    border: solid 1px $second-color;
+  }
+}
+
 @mixin hidden {
   .overflow-container {
     overflow: hidden;
@@ -41,5 +58,14 @@
     bottom: 3px;
     height: 560px;
     width: 460px;
+  }
+}
+
+@mixin paragraph {
+  p {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 22px;
+    font-size: 0.8em;
   }
 }
