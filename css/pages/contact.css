@@ -30,7 +30,8 @@ header {
   outline: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6em;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  resize: vertical; }
   .message textarea::placeholder {
     font-family: 'Montserrat', sans-serif; }
 
