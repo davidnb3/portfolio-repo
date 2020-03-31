@@ -34,8 +34,11 @@ nav {
   nav ul {
     list-style: none; }
   nav li {
-    display: inline;
-    margin-left: 15px; }
+    display: inline-block;
+    margin-left: 20px;
+    transition: transform 600ms; }
+    nav li:hover {
+      transform: scale(1.25); }
   nav a {
     text-decoration: none;
     color: inherit; }
@@ -46,8 +49,11 @@ footer {
     list-style: none;
     float: right; }
   footer li {
-    display: inline;
-    margin-left: 15px; }
+    display: inline-block;
+    margin-left: 20px;
+    transition: transform 600ms; }
+    footer li:hover {
+      transform: scale(1.25); }
   footer a {
     text-decoration: none;
     color: inherit; }
