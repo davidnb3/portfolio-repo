@@ -77,15 +77,16 @@
     overflow: hidden; }
   .music-fig iframe {
     position: relative;
-    bottom: 3px;
+    bottom: 4px;
     height: 560px;
-    margin-bottom: 80px; }
+    width: 460px; }
   .music-fig figcaption {
     display: flex;
     flex-direction: row;
     width: 700px;
     white-space: nowrap;
-    color: #4b5258; }
+    color: #4b5258;
+    margin-top: 80px; }
     .music-fig figcaption hr {
       width: 100%;
       height: 2px;

@@ -29,7 +29,7 @@ header {
     overflow: hidden; }
   .first-figure iframe {
     position: relative;
-    bottom: 3px;
+    bottom: 4px;
     height: 560px;
     width: 460px; }
   .first-figure figcaption {
@@ -78,7 +78,7 @@ header {
     overflow: hidden; }
   .second-figure iframe {
     position: relative;
-    bottom: 3px;
+    bottom: 4px;
     height: 560px;
     width: 460px; }
   .second-figure figcaption {
@@ -127,7 +127,7 @@ header {
     overflow: hidden; }
   .third-figure iframe {
     position: relative;
-    bottom: 3px;
+    bottom: 4px;
     height: 560px;
     width: 460px; }
   .third-figure figcaption {

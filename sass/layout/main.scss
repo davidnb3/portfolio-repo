@@ -18,6 +18,16 @@ body {
   max-width: 1100px;
 }
 
+a {
+  @include scale;
+}
+
+img, .overflow-container {
+  @include scale (1.05);
+}
+
+
+
 header {
   padding-bottom: 240px;
   padding-top: 20px;
@@ -36,12 +46,6 @@ header {
   }
 }
 
-a {
-  transition: transform 600ms;
-  &:hover {
-    transform: scale(1.25);
-  }
-}
 nav {
   @include row;
   justify-content: space-between;

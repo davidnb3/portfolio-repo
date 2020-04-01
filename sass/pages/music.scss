@@ -28,7 +28,6 @@
   bottom: 160px;
   @include column (column-reverse);
   align-items: flex-start;
-  @include hidden;
   @include iframe;
   figcaption {
     @include row;
@@ -72,7 +71,6 @@
   bottom: 120px;
   @include column (column-reverse);
   align-items: flex-start;
-  @include hidden;
   @include iframe;
   figcaption {
     @include row (row-reverse);
@@ -115,7 +113,6 @@
   bottom: 120px;
   @include column (column-reverse);
   align-items: flex-start;
-  @include hidden;
   @include iframe;
   figcaption {
     @include row;
