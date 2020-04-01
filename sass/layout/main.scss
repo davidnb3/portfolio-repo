@@ -36,6 +36,12 @@ header {
   }
 }
 
+a {
+  transition: transform 600ms;
+  &:hover {
+    transform: scale(1.25);
+  }
+}
 nav {
   @include row;
   justify-content: space-between;

@@ -42,13 +42,13 @@
     width: 600px;
     white-space: nowrap;
     color: $second-color;
+    }
     hr {
       @include hr ($position: right);
     }
     a {
       text-decoration: none;
       color: inherit;
-    }
   }
 }
 
