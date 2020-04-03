@@ -33,7 +33,7 @@ header {
     font-size: 3.5em;
     margin-top: 140px;
     line-height: 60px; }
-  header > h2 {
+  header h2 {
     font-size: 1.6em;
     letter-spacing: 3px;
     line-height: 60px; }
@@ -41,7 +41,8 @@ header {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   nav ul {
     list-style: none;
     word-spacing: 10px; }

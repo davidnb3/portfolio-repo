@@ -2,7 +2,7 @@ header {
   padding-bottom: 300px;
   margin-bottom: 80px; }
 
-header h1, header h2 {
+header .container > h1, header .container > h2 {
   transform: scale(1);
   transition-duration: 2s; }
 

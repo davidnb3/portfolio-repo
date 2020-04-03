@@ -12,7 +12,6 @@ body {
   background-color: $background;
 }
 
-
 .container {
   margin: auto;
   max-width: 1100px;
@@ -40,7 +39,7 @@ header {
     margin-top: 140px;
     line-height: 60px;
   }
-  > h2 {
+  h2 {
     font-size: 1.6em;
     letter-spacing: 3px;
     line-height: 60px;
@@ -50,6 +49,7 @@ header {
 nav {
   @include row;
   justify-content: space-between;
+  align-items: center;
   ul {
     list-style: none;
     word-spacing: 10px;
