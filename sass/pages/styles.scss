@@ -1,6 +1,13 @@
 @import '../utils/mixins.scss';
 @import '../utils/variables.scss';
 
+@include header-trans;
+
+nav li:first-of-type {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
 
 
 .flex-container {

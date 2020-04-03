@@ -43,16 +43,20 @@ nav {
   flex-direction: row;
   justify-content: space-between; }
   nav ul {
-    list-style: none; }
+    list-style: none;
+    word-spacing: 10px; }
   nav li {
     display: inline-block;
-    margin-left: 10px;
     padding: 2px 10px 2px 10px;
-    transition: transform 600ms, background 800ms;
+    transition: transform 600ms, background 800ms 100ms;
     background: rgba(255, 255, 255, 0);
     border-radius: 10px; }
     nav li:hover {
       transform: scale(1.25);
+      background: rgba(255, 255, 255, 0.3); }
+    nav li:active {
+      transition-duration: 200ms;
+      transform: scale(1);
       background: rgba(255, 255, 255, 0.3); }
   nav a {
     text-decoration: none;
@@ -62,12 +66,12 @@ footer {
   margin-bottom: 80px; }
   footer ul {
     list-style: none;
-    float: right; }
+    float: right;
+    word-spacing: 10px; }
   footer li {
     display: inline-block;
-    margin-left: 10px;
     padding: 2px 10px 2px 10px;
-    transition: transform 600ms, background 800ms;
+    transition: transform 600ms, background 800ms 100ms;
     background: rgba(255, 255, 255, 0);
     border-radius: 10px; }
     footer li:hover {

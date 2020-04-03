@@ -9,10 +9,17 @@
 }
 
 
-@mixin header {
+@mixin header-padding {
   header {
     padding-bottom: 300px;
     margin-bottom: 80px;
+  }
+}
+
+@mixin header-trans {
+  header h1, header h2 {
+    transform: scale(1);
+    transition-duration: 2s;
   }
 }
 

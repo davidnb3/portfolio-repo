@@ -1,7 +1,13 @@
 @import '../utils/mixins.scss';
 @import '../utils/variables.scss';
 
-@include header;
+@include header-padding;
+@include header-trans;
+
+nav li:nth-of-type(5) {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
 
 ::placeholder {
   color: $second-color;
@@ -78,7 +84,7 @@ footer .container {
 
 .flex-container {
   @include row;
-  width: 700px;
+  width: 660px;
   color: $second-color;
   hr {
     width: 100%;

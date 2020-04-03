@@ -2,6 +2,14 @@ header {
   padding-bottom: 300px;
   margin-bottom: 80px; }
 
+header h1, header h2 {
+  transform: scale(1);
+  transition-duration: 2s; }
+
+nav li:nth-of-type(5) {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px; }
+
 ::placeholder {
   color: #4b5258;
   opacity: 1; }
@@ -66,7 +74,7 @@ footer .container {
 .flex-container {
   display: flex;
   flex-direction: row;
-  width: 700px;
+  width: 660px;
   color: #4b5258; }
   .flex-container hr {
     width: 100%;
