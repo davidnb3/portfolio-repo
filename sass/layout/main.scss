@@ -18,11 +18,15 @@ body {
 }
 
 a {
-  @include scale;
+  transition: transform 600ms;
+  &:hover {
+    transform: scale(1.25);
 }
 
 img, .overflow-container {
-  @include scale (1.05);
+  transition: transform 600ms;
+  &:hover {
+    transform: scale(1.05);
 }
 
 

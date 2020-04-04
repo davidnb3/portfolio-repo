@@ -73,10 +73,3 @@
     font-size: 0.8em;
   }
 }
-
-@mixin scale ($amount: 1.25) {
-  transition: transform 600ms;
-  &:hover {
-    transform: scale($amount);
-  }
-}
