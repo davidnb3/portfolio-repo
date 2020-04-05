@@ -32,6 +32,11 @@ aside {
     border-radius: 200px;
     margin: auto;
     width: 40%;
+    transform: rotate(0turn);
+    transition: transform 6s ease-in-out;
+    &:hover {
+      transform: rotate(12turn);
+    }
   }
   section {
     display: flex;
