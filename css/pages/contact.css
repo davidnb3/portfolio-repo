@@ -29,7 +29,8 @@ nav li:nth-of-type(5) {
     height: 60px;
     font-size: 1.6em;
     padding: 20px;
-    transition: border 600ms; }
+    transition: border 600ms;
+    font-family: 'Montserrat', sans-serif; }
     .details input:focus {
       border: 2px solid #4b5258;
       border-radius: 5px; }
@@ -50,8 +51,6 @@ nav li:nth-of-type(5) {
   resize: vertical;
   padding: 20px;
   transition: border 600ms; }
-  .message textarea::placeholder {
-    font-family: 'Montserrat', sans-serif; }
   .message textarea:focus {
     border: 2px solid #4b5258;
     border-radius: 5px; }
