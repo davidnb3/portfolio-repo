@@ -59,7 +59,16 @@ nav li:first-of-type {
     border: solid 1px #4b5258; }
   .project-fig a {
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+    transition: transform 600ms, background 800ms 100ms, color 800ms; }
+    .project-fig a:hover {
+      transform: scale(1.25);
+      background: rgba(255, 255, 255, 0.3);
+      color: #ECE8E8; }
+    .project-fig a:last-of-type {
+      margin-right: -10px; }
 
 .music-section {
   display: flex;
@@ -103,6 +112,15 @@ nav li:first-of-type {
       border: solid 1px #4b5258; }
     .music-fig figcaption a {
       text-decoration: none;
-      color: inherit; }
+      color: inherit;
+      padding: 2px 10px 2px 10px;
+      border-radius: 10px;
+      transition: transform 600ms, background 800ms 100ms, color 800ms; }
+      .music-fig figcaption a:hover {
+        transform: scale(1.25);
+        background: rgba(255, 255, 255, 0.3);
+        color: #ECE8E8; }
+      .music-fig figcaption a:last-of-type {
+        margin-left: -10px; }
 
 /*# sourceMappingURL=styles.css.map */

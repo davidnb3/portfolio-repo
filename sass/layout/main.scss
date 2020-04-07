@@ -17,18 +17,11 @@ body {
   max-width: 1100px;
 }
 
-a {
-  transition: transform 600ms;
-  &:hover {
-    transform: scale(1.25);
-}
-}
-
 img, .overflow-container {
   transition: transform 600ms;
   &:hover {
     transform: scale(1.05);
-}
+  }
 }
 
 
@@ -65,10 +58,13 @@ nav {
     padding: 2px 10px 2px 10px;
     background: rgba(255, 255, 255, 0.0);
     border-radius: 10px;
+    &:last-of-type {
+      margin-right: -10px;
+    }
     &:hover {
       transform: scale(1.25);
       background: rgba(255, 255, 255, 0.3);
-      transition: transform 600ms, background 800ms 100ms;
+      transition: transform 600ms, background 800ms 100ms;  /*no backwards transition anymore */
     }
     &:active {
       transition-duration: 200ms;
@@ -86,13 +82,13 @@ nav {
 footer {
   margin-bottom: 80px;
   ul {
-    list-style: none;
     float: right;
+    list-style: none;
     word-spacing: 10px;
   }
   li {
     display: inline-block;
-    margin-right: 20px;
+    padding: 2px 10px 2px 10px;    /* how to remove space on the right?*/
     transition: transform 600ms, background 800ms 100ms;
     background: rgba(255, 255, 255, 0.0);
     border-radius: 10px;
@@ -101,7 +97,7 @@ footer {
       background: rgba(255, 255, 255, 0.15);
     }
     &:last-of-type {
-      margin-right: 0;
+      margin-right: -10px;
     }
   }
   a {

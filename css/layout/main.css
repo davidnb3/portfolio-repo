@@ -12,11 +12,6 @@ body {
   margin: auto;
   max-width: 1100px; }
 
-a {
-  transition: transform 600ms; }
-  a:hover {
-    transform: scale(1.25); }
-
 img, .overflow-container {
   transition: transform 600ms; }
   img:hover, .overflow-container:hover {
@@ -51,10 +46,13 @@ nav {
     padding: 2px 10px 2px 10px;
     background: rgba(255, 255, 255, 0);
     border-radius: 10px; }
+    nav li:last-of-type {
+      margin-right: -10px; }
     nav li:hover {
       transform: scale(1.25);
       background: rgba(255, 255, 255, 0.3);
-      transition: transform 600ms, background 800ms 100ms; }
+      transition: transform 600ms, background 800ms 100ms;
+      /*no backwards transition anymore */ }
     nav li:active {
       transition-duration: 200ms;
       transform: scale(1);
@@ -66,12 +64,13 @@ nav {
 footer {
   margin-bottom: 80px; }
   footer ul {
-    list-style: none;
     float: right;
+    list-style: none;
     word-spacing: 10px; }
   footer li {
     display: inline-block;
-    margin-right: 20px;
+    padding: 2px 10px 2px 10px;
+    /* how to remove space on the right?*/
     transition: transform 600ms, background 800ms 100ms;
     background: rgba(255, 255, 255, 0);
     border-radius: 10px; }
@@ -79,7 +78,7 @@ footer {
       transform: scale(1.25);
       background: rgba(255, 255, 255, 0.15); }
     footer li:last-of-type {
-      margin-right: 0; }
+      margin-right: -10px; }
   footer a {
     text-decoration: none;
     color: inherit; }
