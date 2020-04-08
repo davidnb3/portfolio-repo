@@ -31,7 +31,7 @@ nav li:nth-of-type(2) {
   @include column (column-reverse);
   align-items: flex-start;
   img {
-    max-width: 100%;
+    width: 440px;
     height: 560px;
   }
   figcaption {
@@ -70,7 +70,7 @@ nav li:nth-of-type(2) {
   bottom: 120px;
   @include column (column-reverse);
   img {
-    max-width: 100%;
+    width: 440px;
     height: 560px;
   }
   figcaption {
@@ -110,7 +110,7 @@ nav li:nth-of-type(2) {
   @include column (column-reverse);
   align-items: flex-start;
   img {
-    max-width: 100%;
+    width: 440px;
     height: 560px;
   }
   figcaption {

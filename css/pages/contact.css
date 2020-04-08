@@ -47,7 +47,7 @@ nav li:nth-of-type(5) {
   outline: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6em;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   resize: vertical;
   padding: 20px;
   transition: border 600ms; }
@@ -56,14 +56,25 @@ nav li:nth-of-type(5) {
     border-radius: 5px; }
 
 button {
+  display: block;
+  margin: auto;
   height: 60px;
   width: 230px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6em;
   background-color: #151515;
   color: #4b5258;
-  border: none;
-  outline: none; }
+  border: 2px solid #4b5258;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 100px;
+  transform: scale(1);
+  transition: transform 200ms; }
+  button:hover {
+    transform: scale(1.15);
+    transition: transform 800ms, background 800ms 200ms, color 800ms 100ms;
+    background: rgba(255, 255, 255, 0.3);
+    color: #ECE8E8; }
 
 footer .container {
   display: flex;
