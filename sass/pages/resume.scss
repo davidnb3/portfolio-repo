@@ -1,6 +1,7 @@
 $primary: #FFB300;
 $secondary: #2D2D2D;
-
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
 
 * {
   margin: 0;
@@ -10,8 +11,9 @@ $secondary: #2D2D2D;
 
 body {
   font-family: Ebrima, Arial, sans-serif;
-  color: #2D2D2D;
+  color: $main-color;
   text-align: justify;
+  background-color: $background;
 }
 
 .page-container {

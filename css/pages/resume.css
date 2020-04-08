@@ -5,8 +5,9 @@
 
 body {
   font-family: Ebrima, Arial, sans-serif;
-  color: #2D2D2D;
-  text-align: justify; }
+  color: #ECE8E8;
+  text-align: justify;
+  background-color: #151515; }
 
 .page-container {
   max-width: 1200px;
