@@ -11,9 +11,9 @@ $secondary: #2D2D2D;
 
 body {
   font-family: Ebrima, Arial, sans-serif;
-  color: $main-color;
+  color: $secondary;
   text-align: justify;
-  background-color: $background;
+  background-color: $main-color;
 }
 
 .page-container {
@@ -52,12 +52,6 @@ aside {
       font-weight: 500;
       margin: 40px -20px 40px -20px;
       text-transform: uppercase;
-    }
-    &:last-of-type {
-      position: absolute;
-      bottom: 40px;
-      right: 0px;
-      left: 0px;
     }
     ul {
       margin: 0 auto;
@@ -138,18 +132,26 @@ main {
   }
 }
 
-
-.container {
+.flex-container {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  border-bottom: 2px solid $primary;
   > h3 {
     font-weight: normal;
-    border-bottom: 2px solid $primary;
     padding-bottom: 5px;
     font-size: 1.3em;
     text-transform: uppercase;
   }
+}
+
+.animation-container {
+  display: flex;
+  flex-direction: row;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   div {
     display: flex;
     flex-direction: row;
@@ -164,8 +166,12 @@ main {
 }
 
 
-h3 span {
+h3:first-of-type span {
   margin-right: 20px;
+}
+
+h3:last-of-type span {
+  margin-left: 20px;
 }
 
 .container-list {

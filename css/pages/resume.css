@@ -5,9 +5,9 @@
 
 body {
   font-family: Ebrima, Arial, sans-serif;
-  color: #ECE8E8;
+  color: #2D2D2D;
   text-align: justify;
-  background-color: #151515; }
+  background-color: #ECE8E8; }
 
 .page-container {
   max-width: 1200px;
@@ -41,11 +41,6 @@ aside {
       font-weight: 500;
       margin: 40px -20px 40px -20px;
       text-transform: uppercase; }
-    aside section:last-of-type {
-      position: absolute;
-      bottom: 40px;
-      right: 0px;
-      left: 0px; }
     aside section ul {
       margin: 0 auto; }
     aside section li {
@@ -102,16 +97,24 @@ main {
     main article * {
       margin-bottom: 5px; }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #FFB300; }
+  .flex-container > h3 {
+    font-weight: normal;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+    text-transform: uppercase; }
+
+.animation-container {
+  display: flex;
+  flex-direction: row; }
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .container > h3 {
-    font-weight: normal;
-    border-bottom: 2px solid #FFB300;
-    padding-bottom: 5px;
-    font-size: 1.3em;
-    text-transform: uppercase; }
   .container div {
     display: flex;
     flex-direction: row;
@@ -122,8 +125,11 @@ main {
     justify-content: space-between;
     flex-wrap: wrap; }
 
-h3 span {
+h3:first-of-type span {
   margin-right: 20px; }
+
+h3:last-of-type span {
+  margin-left: 20px; }
 
 .container-list {
   flex: 1; }
