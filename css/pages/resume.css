@@ -10,7 +10,7 @@ body {
   background-color: #ECE8E8; }
 
 .page-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   display: flex;
   flex-direction: row; }
@@ -18,7 +18,7 @@ body {
 aside {
   width: 35%;
   padding-top: 45px;
-  background-color: #FFB300;
+  background-color: #8872c4;
   position: relative; }
   aside img {
     display: block;
@@ -30,16 +30,17 @@ aside {
     aside img:hover {
       transform: rotate(12turn); }
   aside section {
+    font-size: 0.9em;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     margin-right: 20px; }
     aside section h2 {
       text-align: center;
-      color: #FFB300;
+      color: #ECE8E8;
       background: #2D2D2D;
       font-weight: 500;
-      margin: 40px -20px 40px -20px;
+      margin: 55px -20px 40px -20px;
       text-transform: uppercase; }
     aside section ul {
       margin: 0 auto; }
@@ -47,36 +48,38 @@ aside {
       margin: 20px 20px 20px 20px; }
 
 .contact-details {
-  margin-bottom: 20px; }
-  .contact-details p:nth-child(2) {
-    font-weight: bold; }
+  margin-top: 40px;
+  font-weight: bold;
+  line-height: 30px; }
+  .contact-details ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
   .contact-details li {
     display: inline;
-    margin-left: 0px;
-    margin-right: 5px;
     font-weight: bold; }
   .contact-details a {
     text-decoration: none;
     color: #2D2D2D; }
     .contact-details a:hover {
-      color: #FFB300;
+      color: #ECE8E8;
       text-shadow: 1px 1px 3px #2D2D2D; }
     .contact-details a:active {
       text-decoration: overline;
       text-shadow: 3px 3px 8px #2D2D2D; }
 
 header h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: lighter;
   font-family: "Courier New", Courier, monospace;
   margin-bottom: 15px; }
   header h1 strong {
-    color: #FFB300;
+    color: #8872c4;
     font-weight: bold; }
 header h2 {
   font-weight: normal;
-  font-size: 1.3em;
-  border-top: 2px solid #FFB300;
+  font-size: 1.2em;
+  border-top: 2px solid #8872c4;
   padding-top: 5px;
   display: inline-block;
   margin-bottom: 12%; }
@@ -89,22 +92,24 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-size: 0.9em; }
   main section li {
     flex: 1; }
   main article {
-    margin: 20px 0px 20px 0px; }
+    margin: 20px 0px 20px 0px;
+    font-size: 0.9em; }
     main article * {
       margin-bottom: 5px; }
 
 .flex-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #FFB300; }
+  border-bottom: 2px solid #8872c4; }
   .flex-container > h3 {
     font-weight: normal;
     padding-bottom: 5px;
-    font-size: 1.3em;
+    font-size: 1em;
     text-transform: uppercase; }
 
 .animation-container {

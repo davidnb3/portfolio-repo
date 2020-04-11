@@ -1,5 +1,5 @@
-$primary: #FFB300;
 $secondary: #2D2D2D;
+$resume-color: #8872c4;
 @import '../utils/mixins.scss';
 @import '../utils/variables.scss';
 
@@ -17,7 +17,7 @@ body {
 }
 
 .page-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -27,7 +27,7 @@ body {
 aside {
   width: 35%;
   padding-top: 45px;
-  background-color: $primary;
+  background-color: #8872c4;
   position: relative;
   img {
     display: block;
@@ -41,16 +41,17 @@ aside {
     }
   }
   section {
+    font-size: 0.9em;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
     h2 {
       text-align: center;
-      color: $primary;
+      color: $main-color;
       background: $secondary;
       font-weight: 500;
-      margin: 40px -20px 40px -20px;
+      margin: 55px -20px 40px -20px;
       text-transform: uppercase;
     }
     ul {
@@ -64,21 +65,22 @@ aside {
 
 
 .contact-details {
-  margin-bottom: 20px;
-  p:nth-child(2) {
-    font-weight: bold;
+  margin-top: 40px;
+  font-weight: bold;
+  line-height: 30px;
+  ul {
+    @include row;
+    justify-content: space-around;
   }
   li {
     display: inline;
-    margin-left: 0px;
-    margin-right: 5px;
     font-weight: bold;
   }
   a {
     text-decoration: none;
     color: $secondary;
     &:hover {
-      color: $primary;
+      color: $main-color;
       text-shadow: 1px 1px 3px $secondary;
     }
     &:active{
@@ -91,19 +93,19 @@ aside {
 
 header {
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: lighter;
     font-family: "Courier New", Courier, monospace;
     margin-bottom: 15px;
     strong {
-      color: $primary;
+      color: $resume-color;
       font-weight: bold;
     }
   }
   h2 {
     font-weight: normal;
-    font-size: 1.3em;
-    border-top: 2px solid $primary;
+    font-size: 1.2em;
+    border-top: 2px solid $resume-color;
     padding-top: 5px;
     display: inline-block;
     margin-bottom: 12%;
@@ -120,12 +122,14 @@ main {
     flex-direction: column;
     height: 100%;
     margin-top: 20px;
+    font-size: 0.9em;
   }
   section li {
     flex: 1;
   }
   article {
     margin: 20px 0px 20px 0px;
+    font-size: 0.9em;
     * {
       margin-bottom: 5px;
     }
@@ -135,11 +139,11 @@ main {
 .flex-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid $primary;
+  border-bottom: 2px solid $resume-color;
   > h3 {
     font-weight: normal;
     padding-bottom: 5px;
-    font-size: 1.3em;
+    font-size: 1em;
     text-transform: uppercase;
   }
 }
