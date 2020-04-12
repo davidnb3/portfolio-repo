@@ -13,16 +13,23 @@ nav li:first-of-type {
   width: 600px;
   color: $second-color;
   font-size: 0.9em;
+  @media screen and (max-width: 1120px) {
+    width: 420px;
+  }
   hr {
     @include hr;
   }
 }
+
 .project-section {
   @include row;
   justify-content: space-between;
   article {
     max-width: 460px;
     height: 520px;
+    @media screen and (max-width: 1120px) {
+      max-width: 420px;
+    }
     h3 {
       margin-top: 80px;
       line-height: 28px;
@@ -47,6 +54,9 @@ nav li:first-of-type {
     width: 600px;
     white-space: nowrap;
     color: $second-color;
+    @media screen and (max-width: 1120px) {
+      max-width: 420px;
+      }
     }
     hr {
       @include hr ($position: right);
@@ -74,9 +84,15 @@ nav li:first-of-type {
   article {
     max-width: 460px;
     max-height: 583px;
+    @media screen and (max-width: 1120px) {
+      max-width: 420px;
+    }
     h3 {
       margin-top: 140px;
       line-height: 28px;
+      @media screen and (max-width: 1120px) {
+        max-width: 420px;
+      }
     }
     @include paragraph;
   }
@@ -93,6 +109,9 @@ nav li:first-of-type {
     white-space: nowrap;
     color: $second-color;
     margin-top: 80px;
+    @media screen and (max-width: 1120px) {
+      max-width: 420px;
+    }
     hr {
       @include hr;
     }

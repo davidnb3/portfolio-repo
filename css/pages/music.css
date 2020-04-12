@@ -40,6 +40,9 @@ nav li:nth-of-type(3) {
     bottom: 4px;
     height: 560px;
     width: 440px; }
+    @media screen and (max-width: 1120px) {
+      .first-figure iframe {
+        max-width: 420px; } }
   .first-figure figcaption {
     display: flex;
     flex-direction: row;
@@ -89,6 +92,9 @@ nav li:nth-of-type(3) {
     bottom: 4px;
     height: 560px;
     width: 440px; }
+    @media screen and (max-width: 1120px) {
+      .second-figure iframe {
+        max-width: 420px; } }
   .second-figure figcaption {
     display: flex;
     flex-direction: row-reverse;
@@ -138,6 +144,9 @@ nav li:nth-of-type(3) {
     bottom: 4px;
     height: 560px;
     width: 440px; }
+    @media screen and (max-width: 1120px) {
+      .third-figure iframe {
+        max-width: 420px; } }
   .third-figure figcaption {
     display: flex;
     flex-direction: row;
