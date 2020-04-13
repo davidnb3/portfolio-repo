@@ -25,14 +25,38 @@
 
 @mixin figcaption ($direction: row, $top: 60px){
   @if (($direction) == row) {
+    width: 600px;
+    white-space: nowrap;
+    color: $second-color;
     position: relative;
     top: $top;
     right: 640px;
   }
   @else {
+    width: 600px;
+    white-space: nowrap;
+    color: $second-color;
     position: relative;
     top: $top;
     left: 500px;
+  }
+  @media screen and (max-width: 1120px) {
+    @if (($direction) == row) {
+      width: 420px;
+      white-space: nowrap;
+      color: $second-color;
+      position: relative;
+      top: $top;
+      right: 480px;
+    }
+    @else {
+      width: 420px;
+      white-space: nowrap;
+      color: $second-color;
+      position: relative;
+      top: $top;
+      left: 480px;
+    }
   }
 }
 
@@ -74,5 +98,20 @@
     text-align: justify;
     line-height: 22px;
     font-size: 0.8em;
+  }
+}
+
+@mixin large-screen ($width: 420px) {
+  @media screen and (max-width: 1120px) {
+    width: ($width);
+  }
+}
+
+@mixin medium-screen ($margin: 0) {
+  @media screen and (max-width: 930px) {
+    @include column;
+    align-items: center;
+    justify-content: center;
+    margin-top: $margin;
   }
 }

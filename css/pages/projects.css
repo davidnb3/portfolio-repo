@@ -18,6 +18,9 @@ nav li:nth-of-type(2) {
   .first-section article {
     max-width: 460px;
     height: 540px; }
+    @media screen and (max-width: 1120px) {
+      .first-section article {
+        width: 420px; } }
     .first-section article h3 {
       margin-top: 60px;
       line-height: 28px; }
@@ -36,6 +39,9 @@ nav li:nth-of-type(2) {
   .first-figure img {
     width: 440px;
     height: 560px; }
+    @media screen and (max-width: 1120px) {
+      .first-figure img {
+        width: 420px; } }
   .first-figure figcaption {
     display: flex;
     flex-direction: row-reverse;
@@ -45,6 +51,14 @@ nav li:nth-of-type(2) {
     position: relative;
     top: 120px;
     left: 500px; }
+    @media screen and (max-width: 1120px) {
+      .first-figure figcaption {
+        width: 420px;
+        white-space: nowrap;
+        color: #4b5258;
+        position: relative;
+        top: 120px;
+        left: 480px; } }
     .first-figure figcaption hr {
       width: 100%;
       height: 2px;
@@ -53,7 +67,14 @@ nav li:nth-of-type(2) {
       border: solid 1px #4b5258; }
     .first-figure figcaption a {
       text-decoration: none;
-      color: inherit; }
+      color: inherit;
+      padding: 2px 10px 2px 10px;
+      border-radius: 10px;
+      transition: transform 600ms, background 800ms 100ms, color 800ms; }
+      .first-figure figcaption a:hover {
+        transform: scale(1.25);
+        background: rgba(255, 255, 255, 0.3);
+        color: #ECE8E8; }
 
 .second-section {
   display: flex;
@@ -63,6 +84,9 @@ nav li:nth-of-type(2) {
   .second-section article {
     max-width: 460px;
     max-height: 540px; }
+    @media screen and (max-width: 1120px) {
+      .second-section article {
+        width: 420px; } }
     .second-section article h3 {
       margin-top: 40px;
       line-height: 28px; }
@@ -80,6 +104,9 @@ nav li:nth-of-type(2) {
   .second-figure img {
     width: 440px;
     height: 560px; }
+    @media screen and (max-width: 1120px) {
+      .second-figure img {
+        width: 420px; } }
   .second-figure figcaption {
     display: flex;
     flex-direction: row;
@@ -89,6 +116,14 @@ nav li:nth-of-type(2) {
     position: relative;
     top: 60px;
     right: 640px; }
+    @media screen and (max-width: 1120px) {
+      .second-figure figcaption {
+        width: 420px;
+        white-space: nowrap;
+        color: #4b5258;
+        position: relative;
+        top: 60px;
+        right: 480px; } }
     .second-figure figcaption hr {
       width: 100%;
       height: 2px;
@@ -97,7 +132,14 @@ nav li:nth-of-type(2) {
       border: solid 1px #4b5258; }
     .second-figure figcaption a {
       text-decoration: none;
-      color: inherit; }
+      color: inherit;
+      padding: 2px 10px 2px 10px;
+      border-radius: 10px;
+      transition: transform 600ms, background 800ms 100ms, color 800ms; }
+      .second-figure figcaption a:hover {
+        transform: scale(1.25);
+        background: rgba(255, 255, 255, 0.3);
+        color: #ECE8E8; }
 
 .third-section {
   display: flex;
@@ -107,6 +149,9 @@ nav li:nth-of-type(2) {
   .third-section article {
     max-width: 460px;
     height: 540px; }
+    @media screen and (max-width: 1120px) {
+      .third-section article {
+        width: 420px; } }
     .third-section article h3 {
       margin-top: 80px;
       line-height: 28px; }
@@ -125,6 +170,9 @@ nav li:nth-of-type(2) {
   .third-figure img {
     width: 440px;
     height: 560px; }
+    @media screen and (max-width: 1120px) {
+      .third-figure img {
+        width: 420px; } }
   .third-figure figcaption {
     display: flex;
     flex-direction: row-reverse;
@@ -134,6 +182,14 @@ nav li:nth-of-type(2) {
     position: relative;
     top: 100px;
     left: 500px; }
+    @media screen and (max-width: 1120px) {
+      .third-figure figcaption {
+        width: 420px;
+        white-space: nowrap;
+        color: #4b5258;
+        position: relative;
+        top: 100px;
+        left: 480px; } }
     .third-figure figcaption hr {
       width: 100%;
       height: 2px;
@@ -142,7 +198,14 @@ nav li:nth-of-type(2) {
       border: solid 1px #4b5258; }
     .third-figure figcaption a {
       text-decoration: none;
-      color: inherit; }
+      color: inherit;
+      padding: 2px 10px 2px 10px;
+      border-radius: 10px;
+      transition: transform 600ms, background 800ms 100ms, color 800ms; }
+      .third-figure figcaption a:hover {
+        transform: scale(1.25);
+        background: rgba(255, 255, 255, 0.3);
+        color: #ECE8E8; }
 
 footer .container {
   display: flex;
@@ -152,10 +215,14 @@ footer .container {
 .flex-container {
   display: flex;
   flex-direction: row;
-  width: 660px;
+  width: 700px;
   color: #4b5258;
   font-size: 0.9em;
-  white-space: nowrap; }
+  white-space: nowrap;
+  align-items: center; }
+  @media screen and (max-width: 1120px) {
+    .flex-container {
+      width: 460px; } }
   .flex-container hr {
     width: 100%;
     height: 2px;

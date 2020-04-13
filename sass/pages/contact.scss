@@ -31,6 +31,7 @@ nav li:nth-of-type(5) {
   padding: 20px;
   transition: border 600ms;
   font-family: 'Montserrat', sans-serif;
+  @include large-screen;
   &:focus {
     border: 2px solid $second-color;
     border-radius: 5px;
@@ -96,12 +97,11 @@ footer .container {
 
 .flex-container {
   @include row;
-  width: 660px;
+  align-items: center;
+  width: 700px;
   color: $second-color;
+  @include large-screen ($width: 460px);
   hr {
-    width: 100%;
-    height: 2px;
-    margin: auto;
-    border: solid 1px $second-color;
+    @include hr;
   }
 }

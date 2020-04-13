@@ -31,6 +31,9 @@ nav li:nth-of-type(5) {
     padding: 20px;
     transition: border 600ms;
     font-family: 'Montserrat', sans-serif; }
+    @media screen and (max-width: 1120px) {
+      .details input {
+        width: 420px; } }
     .details input:focus {
       border: 2px solid #4b5258;
       border-radius: 5px; }
@@ -84,12 +87,17 @@ footer .container {
 .flex-container {
   display: flex;
   flex-direction: row;
-  width: 660px;
+  align-items: center;
+  width: 700px;
   color: #4b5258; }
+  @media screen and (max-width: 1120px) {
+    .flex-container {
+      width: 460px; } }
   .flex-container hr {
     width: 100%;
     height: 2px;
     margin: auto;
+    margin-left: 20px;
     border: solid 1px #4b5258; }
 
 /*# sourceMappingURL=contact.css.map */
