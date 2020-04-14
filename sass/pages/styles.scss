@@ -27,6 +27,7 @@ nav li:first-of-type {
     max-width: 460px;
     height: 520px;
     @include large-screen;
+    @include medium-screen-height;
     h3 {
       margin-top: 80px;
       line-height: 28px;
@@ -80,7 +81,7 @@ nav li:first-of-type {
 .music-section {
   @include row (row-reverse);
   justify-content: space-between;
-  @include medium-screen;
+  @include medium-screen ($margin: 280px);
   article {
     max-width: 460px;
     max-height: 578px;
@@ -101,7 +102,7 @@ nav li:first-of-type {
   width: 460px;
   @include iframe;
   @include large-screen;
-  @include medium-screen ($margin: 140px);
+  @include medium-screen ($margin: 40px);
   figcaption {
     @include row;
     width: 700px;

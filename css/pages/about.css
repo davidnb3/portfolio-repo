@@ -55,6 +55,12 @@ nav li:nth-of-type(4) {
         position: relative;
         top: 120px;
         left: 480px; } }
+  @media screen and (max-width: 1120px) and (max-width: 930px) {
+    .first-figure figcaption {
+      position: relative;
+      left: 0;
+      top: 0; } }
+
     .first-figure figcaption hr {
       width: 100%;
       height: 2px;

@@ -19,6 +19,7 @@ nav li:nth-of-type(2) {
     max-width: 460px;
     height: 540px;
     @include large-screen;
+    @include medium-screen-height ($height: 420px);
     h3 {
       margin-top: 60px;
       line-height: 28px;
@@ -32,6 +33,7 @@ nav li:nth-of-type(2) {
   bottom: 160px;
   @include column (column-reverse);
   align-items: flex-start;
+  @include medium-screen;
   img {
     width: 440px;
     height: 560px;
@@ -64,11 +66,12 @@ nav li:nth-of-type(2) {
   @include row;
   justify-content: space-between;
   margin-bottom: 40px;
-  @include medium-screen;
+  @include medium-screen ($margin: 180px);
   article {
     max-width: 460px;
     max-height: 540px;
     @include large-screen;
+    @include medium-screen-height ($height: 400px);
     h3 {
       margin-top: 40px;
       line-height: 28px;
@@ -81,6 +84,7 @@ nav li:nth-of-type(2) {
   position: relative;
   bottom: 120px;
   @include column (column-reverse);
+  @include medium-screen;
   img {
     width: 440px;
     height: 560px;
@@ -111,11 +115,12 @@ nav li:nth-of-type(2) {
   @include row (row-reverse);
   justify-content: space-between;
   margin-bottom: 80px;
-  @include medium-screen;
+  @include medium-screen ($margin: 160px);
   article {
     max-width: 460px;
     height: 540px;
     @include large-screen;
+    @include medium-screen-height ($height: 440px);
     h3 {
       margin-top: 80px;
       line-height: 28px;
@@ -129,6 +134,7 @@ nav li:nth-of-type(2) {
   bottom: 120px;
   @include column (column-reverse);
   align-items: flex-start;
+  @include medium-screen;
   img {
     width: 440px;
     height: 560px;

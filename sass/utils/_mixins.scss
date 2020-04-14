@@ -57,6 +57,11 @@
       top: $top;
       left: 480px;
     }
+    @media screen and (max-width: 930px) {
+      position: relative;
+      left: 0;
+      top: 0;
+    }
   }
 }
 
@@ -107,11 +112,18 @@
   }
 }
 
-@mixin medium-screen ($margin: 0) {
+@mixin medium-screen ($margin: 0, $position: static) {
   @media screen and (max-width: 930px) {
     @include column;
     align-items: center;
     justify-content: center;
     margin-top: $margin;
+    position: $position;
   }
+}
+
+@mixin medium-screen-height ($height: 360px) {
+    @media screen and (max-width: 930px) {
+      height: $height;
+    }
 }

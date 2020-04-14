@@ -23,7 +23,7 @@ main .container {
 }
 
 footer .container {
-  @include medium-screen ($margin: 200px);
+  @include medium-screen ($margin: 160px);
 }
 
 img, .overflow-container {
