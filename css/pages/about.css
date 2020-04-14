@@ -19,7 +19,7 @@ nav li:nth-of-type(4) {
     height: 540px; }
     @media screen and (max-width: 1120px) {
       .first-section article {
-        width: 420px; } }
+        max-width: 420px; } }
     .first-section article h3 {
       margin-top: 60px;
       line-height: 28px; }
@@ -80,7 +80,7 @@ footer .container {
   white-space: nowrap; }
   @media screen and (max-width: 1120px) {
     .flex-container {
-      width: 460px; } }
+      max-width: 460px; } }
   .flex-container h3 {
     margin-right: 10px; }
   .flex-container hr {

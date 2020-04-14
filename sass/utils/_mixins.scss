@@ -103,7 +103,7 @@
 
 @mixin large-screen ($width: 420px) {
   @media screen and (max-width: 1120px) {
-    width: ($width);
+    max-width: ($width);
   }
 }
 

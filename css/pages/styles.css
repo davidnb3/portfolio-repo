@@ -14,7 +14,7 @@ nav li:first-of-type {
   font-size: 0.9em; }
   @media screen and (max-width: 1120px) {
     .flex-container {
-      width: 420px; } }
+      max-width: 420px; } }
   .flex-container hr {
     width: 100%;
     height: 2px;
@@ -38,7 +38,7 @@ nav li:first-of-type {
     height: 520px; }
     @media screen and (max-width: 1120px) {
       .project-section article {
-        width: 420px; } }
+        max-width: 420px; } }
     .project-section article h3 {
       margin-top: 80px;
       line-height: 28px; }
@@ -76,7 +76,7 @@ nav li:first-of-type {
     color: #4b5258; }
     @media screen and (max-width: 1120px) {
       .project-fig figcaption {
-        width: 420px; } }
+        max-width: 420px; } }
   .project-fig hr {
     width: 100%;
     height: 2px;
@@ -112,13 +112,13 @@ nav li:first-of-type {
     max-height: 578px; }
     @media screen and (max-width: 1120px) {
       .music-section article {
-        width: 420px; } }
+        max-width: 420px; } }
     .music-section article h3 {
       margin-top: 140px;
       line-height: 28px; }
       @media screen and (max-width: 1120px) {
         .music-section article h3 {
-          width: 420px; } }
+          max-width: 420px; } }
       @media screen and (max-width: 930px) {
         .music-section article h3 {
           display: flex;
@@ -148,7 +148,7 @@ nav li:first-of-type {
         max-width: 420px; } }
   @media screen and (max-width: 1120px) {
     .music-fig {
-      width: 420px; } }
+      max-width: 420px; } }
   @media screen and (max-width: 930px) {
     .music-fig {
       display: flex;
@@ -165,7 +165,7 @@ nav li:first-of-type {
     margin-top: 80px; }
     @media screen and (max-width: 1120px) {
       .music-fig figcaption {
-        width: 460px; } }
+        max-width: 460px; } }
     @media screen and (max-width: 930px) {
       .music-fig figcaption {
         width: 420px;
