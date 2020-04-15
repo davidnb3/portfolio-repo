@@ -10,6 +10,7 @@ nav li:first-of-type {
 
 .flex-container {
   @include large-screen;
+  @include medium-screen-text;
   @include row;
   width: 600px;
   color: $second-color;
@@ -46,20 +47,21 @@ nav li:first-of-type {
 
 .project-fig {
   @include column;
-  @include medium-screen-fig;
   position: relative;
   bottom: 120px;
   align-items: flex-end;
   img {
+    @include medium-screen-fig;
     max-width: 100%;
     height: 560px;
     margin-bottom: 100px;
     @media screen and (max-width: 930px) {
-      margin-bottom: 80px;
+      margin-bottom: 40px;
     }
   }
   figcaption {
     @include large-screen;
+    @include medium-screen-text ($font-size: 1em);
     @include row (row-reverse);
     width: 600px;
     white-space: nowrap;
@@ -88,10 +90,17 @@ nav li:first-of-type {
 .music-section {
   @include row (row-reverse);
   justify-content: space-between;
+  height: 576px;
+  @media screen and (max-width: 930px) {
+    height: 407px;
+  }
   article {
     @include large-screen;
     @include medium-screen-text;
     max-width: 460px;
+    @media screen and (max-width: 930px) {
+      height: 420px;
+    }
     h3 {
       @include large-screen;
       margin-top: 140px;
@@ -109,7 +118,6 @@ nav li:first-of-type {
 .music-fig {
   @include iframe;
   @include large-screen;
-  @include medium-screen-fig;
   position: relative;
   bottom: 60px;
   width: 460px;
@@ -118,6 +126,7 @@ nav li:first-of-type {
   }
   figcaption {
     @include large-screen ($width: 460px);
+    @include medium-screen-text ($font-size: 1em);
     @include row;
     width: 700px;
     white-space: nowrap;

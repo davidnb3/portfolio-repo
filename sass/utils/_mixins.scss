@@ -57,10 +57,23 @@
       top: $top;
       left: 480px;
     }
-    @media screen and (max-width: 600px) {
-      position: static;
-      left: 0;
-      top: 0;
+  }
+  @media screen and (max-width: 930px) {
+    @if (($direction) == row) {
+      width: 340px;
+      white-space: nowrap;
+      color: $second-color;
+      position: relative;
+      top: $top;
+      right: 360px;
+    }
+    @else {
+      width: 340px;
+      white-space: nowrap;
+      color: $second-color;
+      position: relative;
+      top: $top;
+      left: 360px;
     }
   }
 }
@@ -91,9 +104,8 @@
     bottom: 4px;
     height: 560px;
     width: 440px;
-    @media screen and (max-width: 1120px) {
-      max-width: 420px;
-    }
+    @include large-screen;
+    @include medium-screen-fig;
   }
 }
 
@@ -112,19 +124,19 @@
 
 @mixin medium-screen {
   @media screen and (max-width: 930px) {
-    max-width: 760px;
+    max-width: 700px;
   }
 }
-@mixin medium-screen-text ($width: 360px) {
+@mixin medium-screen-text ($font-size: 0.8em, $width: 340px) {
   @media screen and (max-width: 930px) {
-    font-size: 0.8em;
+    font-size: $font-size;
     max-width: $width;
   }
 }
 
 @mixin medium-screen-fig {
   @media screen and (max-width: 930px) {
-    width: 360px;
+    width: 340px;
     height: 480px;
   }
 }

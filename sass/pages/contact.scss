@@ -32,6 +32,9 @@ nav li:nth-of-type(5) {
   padding: 20px;
   transition: border 600ms;
   font-family: 'Montserrat', sans-serif;
+  @media screen and (max-width: 930px) {
+    width: 320px;
+  }
   &:focus {
     border: 2px solid $second-color;
     border-radius: 5px;
@@ -97,6 +100,7 @@ footer .container {
 
 .flex-container {
   @include large-screen ($width: 460px);
+  @include medium-screen-text;
   @include row;
   align-items: center;
   width: 700px;

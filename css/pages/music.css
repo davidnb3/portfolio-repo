@@ -21,9 +21,19 @@ nav li:nth-of-type(3) {
     @media screen and (max-width: 1120px) {
       .first-section article {
         max-width: 420px; } }
+    @media screen and (max-width: 930px) {
+      .first-section article {
+        font-size: 0.8em;
+        max-width: 340px; } }
+    @media screen and (max-width: 930px) {
+      .first-section article {
+        height: 420px; } }
     .first-section article h3 {
       margin-top: 60px;
       line-height: 28px; }
+      @media screen and (max-width: 930px) {
+        .first-section article h3 {
+          margin-top: 20px; } }
     .first-section article p {
       margin-top: 20px;
       text-align: justify;
@@ -31,10 +41,10 @@ nav li:nth-of-type(3) {
       font-size: 0.8em; }
 
 .first-figure {
-  display: flex;
-  flex-direction: column-reverse;
   position: relative;
   bottom: 160px;
+  display: flex;
+  flex-direction: column-reverse;
   align-items: flex-start; }
   .first-figure .overflow-container {
     overflow: hidden; }
@@ -46,6 +56,10 @@ nav li:nth-of-type(3) {
     @media screen and (max-width: 1120px) {
       .first-figure iframe {
         max-width: 420px; } }
+    @media screen and (max-width: 930px) {
+      .first-figure iframe {
+        width: 340px;
+        height: 480px; } }
   .first-figure figcaption {
     display: flex;
     flex-direction: row;
@@ -63,12 +77,14 @@ nav li:nth-of-type(3) {
         position: relative;
         top: 120px;
         right: 480px; } }
-  @media screen and (max-width: 1120px) and (max-width: 600px) {
-    .first-figure figcaption {
-      position: static;
-      left: 0;
-      top: 0; } }
-
+    @media screen and (max-width: 930px) {
+      .first-figure figcaption {
+        width: 340px;
+        white-space: nowrap;
+        color: #4b5258;
+        position: relative;
+        top: 120px;
+        right: 360px; } }
     .first-figure figcaption hr {
       width: 100%;
       height: 2px;
@@ -90,9 +106,19 @@ nav li:nth-of-type(3) {
     @media screen and (max-width: 1120px) {
       .second-section article {
         max-width: 420px; } }
+    @media screen and (max-width: 930px) {
+      .second-section article {
+        font-size: 0.8em;
+        max-width: 340px; } }
+    @media screen and (max-width: 930px) {
+      .second-section article {
+        height: 420px; } }
     .second-section article h3 {
       margin-top: 40px;
       line-height: 28px; }
+      @media screen and (max-width: 930px) {
+        .second-section article h3 {
+          margin-top: 0; } }
     .second-section article p {
       margin-top: 20px;
       text-align: justify;
@@ -115,6 +141,10 @@ nav li:nth-of-type(3) {
     @media screen and (max-width: 1120px) {
       .second-figure iframe {
         max-width: 420px; } }
+    @media screen and (max-width: 930px) {
+      .second-figure iframe {
+        width: 340px;
+        height: 480px; } }
   .second-figure figcaption {
     display: flex;
     flex-direction: row-reverse;
@@ -132,12 +162,14 @@ nav li:nth-of-type(3) {
         position: relative;
         top: 60px;
         left: 480px; } }
-  @media screen and (max-width: 1120px) and (max-width: 600px) {
-    .second-figure figcaption {
-      position: static;
-      left: 0;
-      top: 0; } }
-
+    @media screen and (max-width: 930px) {
+      .second-figure figcaption {
+        width: 340px;
+        white-space: nowrap;
+        color: #4b5258;
+        position: relative;
+        top: 60px;
+        left: 360px; } }
     .second-figure figcaption hr {
       width: 100%;
       height: 2px;
@@ -159,9 +191,19 @@ nav li:nth-of-type(3) {
     @media screen and (max-width: 1120px) {
       .third-section article {
         max-width: 420px; } }
+    @media screen and (max-width: 930px) {
+      .third-section article {
+        font-size: 0.8em;
+        max-width: 340px; } }
+    @media screen and (max-width: 930px) {
+      .third-section article {
+        height: 420px; } }
     .third-section article h3 {
       margin-top: 80px;
       line-height: 28px; }
+      @media screen and (max-width: 930px) {
+        .third-section article h3 {
+          margin-top: 40px; } }
     .third-section article p {
       margin-top: 20px;
       text-align: justify;
@@ -184,6 +226,10 @@ nav li:nth-of-type(3) {
     @media screen and (max-width: 1120px) {
       .third-figure iframe {
         max-width: 420px; } }
+    @media screen and (max-width: 930px) {
+      .third-figure iframe {
+        width: 340px;
+        height: 480px; } }
   .third-figure figcaption {
     display: flex;
     flex-direction: row;
@@ -201,12 +247,14 @@ nav li:nth-of-type(3) {
         position: relative;
         top: 100px;
         right: 480px; } }
-  @media screen and (max-width: 1120px) and (max-width: 600px) {
-    .third-figure figcaption {
-      position: static;
-      left: 0;
-      top: 0; } }
-
+    @media screen and (max-width: 930px) {
+      .third-figure figcaption {
+        width: 340px;
+        white-space: nowrap;
+        color: #4b5258;
+        position: relative;
+        top: 100px;
+        right: 360px; } }
     .third-figure figcaption hr {
       width: 100%;
       height: 2px;
@@ -233,6 +281,10 @@ footer .container {
   @media screen and (max-width: 1120px) {
     .flex-container {
       max-width: 460px; } }
+  @media screen and (max-width: 930px) {
+    .flex-container {
+      font-size: 0.8em;
+      max-width: 340px; } }
   .flex-container h3 {
     margin-right: 10px; }
   .flex-container hr {

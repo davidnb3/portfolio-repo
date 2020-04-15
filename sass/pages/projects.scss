@@ -16,11 +16,18 @@ nav li:nth-of-type(2) {
   margin-bottom: 40px;
   article {
     @include large-screen;
+    @include medium-screen-text;
     max-width: 460px;
     height: 540px;
+    @media screen and (max-width: 930px) {
+      height: 420px;
+    }
     h3 {
       margin-top: 60px;
       line-height: 28px;
+      @media screen and (max-width: 930px) {
+        margin-top: 20px;
+      }
     }
     p {
       @include paragraph;
@@ -36,11 +43,10 @@ nav li:nth-of-type(2) {
   bottom: 160px;
   align-items: flex-start;
   img {
+    @include large-screen;
+    @include medium-screen-fig;
     width: 440px;
     height: 560px;
-    @media screen and (max-width: 1120px) {
-      width: 420px;
-    }
   }
   figcaption {
     @include row (row-reverse);
@@ -69,11 +75,18 @@ nav li:nth-of-type(2) {
   margin-bottom: 40px;
   article {
     @include large-screen;
+    @include medium-screen-text;
     max-width: 460px;
     max-height: 540px;
+    @media screen and (max-width: 930px) {
+      height: 420px;
+    }
     h3 {
       margin-top: 40px;
       line-height: 28px;
+      @media screen and (max-width: 930px) {
+        margin-top: 20px;
+      }
     }
     p {
       @include paragraph;
@@ -89,6 +102,7 @@ nav li:nth-of-type(2) {
   bottom: 120px;
   img {
     @include large-screen;
+    @include medium-screen-fig;
     width: 440px;
     height: 560px;
   }
@@ -119,11 +133,18 @@ nav li:nth-of-type(2) {
   margin-bottom: 80px;
   article {
     @include large-screen;
+    @include medium-screen-text;
     max-width: 460px;
     height: 540px;
+    @media screen and (max-width: 930px) {
+      height: 420px;
+    }
     h3 {
       margin-top: 80px;
       line-height: 28px;
+      @media screen and (max-width: 930px) {
+        margin-top: 60px;
+      }
     }
     p {
       @include paragraph;
@@ -140,6 +161,7 @@ nav li:nth-of-type(2) {
   align-items: flex-start;
   img {
     @include large-screen;
+    @include medium-screen-fig;
     width: 440px;
     height: 560px;
   }
@@ -171,19 +193,14 @@ footer .container {
 
 .flex-container {
   @include large-screen ($width: 460px);
+  @include medium-screen-text;
   @include row;
   width: 700px;
   color: $second-color;
   font-size: 0.9em;
   white-space: nowrap;
   align-items: center;
-  @media screen and (max-width: 930px) {
-    color: $background;
-  }
   hr {
     @include hr;
-    @media screen and (max-width: 930px) {
-      border-color: $background;
-    }
   }
 }
