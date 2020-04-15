@@ -14,9 +14,11 @@ body {
 
 .container {
   @include large-screen ($width: 900px);
+  @include medium-screen;
   margin: auto;
   max-width: 1100px;
 }
+
 
 img, .overflow-container {
   transition: transform 600ms;

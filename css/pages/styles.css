@@ -32,9 +32,19 @@ nav li:first-of-type {
     @media screen and (max-width: 1120px) {
       .project-section article {
         max-width: 420px; } }
+    @media screen and (max-width: 930px) {
+      .project-section article {
+        font-size: 0.8em;
+        max-width: 360px; } }
+    @media screen and (max-width: 930px) {
+      .project-section article {
+        height: 480px; } }
     .project-section article h3 {
       margin-top: 80px;
       line-height: 28px; }
+      @media screen and (max-width: 930px) {
+        .project-section article h3 {
+          margin-top: 40px; } }
     .project-section article p {
       margin-top: 20px;
       text-align: justify;
@@ -47,13 +57,17 @@ nav li:first-of-type {
   position: relative;
   bottom: 120px;
   align-items: flex-end; }
+  @media screen and (max-width: 930px) {
+    .project-fig {
+      width: 360px;
+      height: 480px; } }
   .project-fig img {
     max-width: 100%;
     height: 560px;
     margin-bottom: 100px; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 930px) {
       .project-fig img {
-        margin-bottom: 40px; } }
+        margin-bottom: 80px; } }
   .project-fig figcaption {
     display: flex;
     flex-direction: row-reverse;
@@ -87,17 +101,23 @@ nav li:first-of-type {
   flex-direction: row-reverse;
   justify-content: space-between; }
   .music-section article {
-    max-width: 460px;
-    max-height: 578px; }
+    max-width: 460px; }
     @media screen and (max-width: 1120px) {
       .music-section article {
         max-width: 420px; } }
+    @media screen and (max-width: 930px) {
+      .music-section article {
+        font-size: 0.8em;
+        max-width: 360px; } }
     .music-section article h3 {
       margin-top: 140px;
       line-height: 28px; }
       @media screen and (max-width: 1120px) {
         .music-section article h3 {
           max-width: 420px; } }
+      @media screen and (max-width: 930px) {
+        .music-section article h3 {
+          margin-top: 0; } }
     .music-section article p {
       margin-top: 20px;
       text-align: justify;
@@ -121,6 +141,13 @@ nav li:first-of-type {
   @media screen and (max-width: 1120px) {
     .music-fig {
       max-width: 420px; } }
+  @media screen and (max-width: 930px) {
+    .music-fig {
+      width: 360px;
+      height: 480px; } }
+  @media screen and (max-width: 930px) {
+    .music-fig {
+      bottom: 100px; } }
   .music-fig figcaption {
     display: flex;
     flex-direction: row;
