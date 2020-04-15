@@ -14,9 +14,9 @@ nav li:nth-of-type(4) {
   @include row (row-reverse);
   justify-content: space-between;
   article {
+    @include large-screen;
     max-width: 460px;
     height: 540px;
-    @include large-screen;
     h3 {
       margin-top: 60px;
       line-height: 28px;
@@ -31,9 +31,9 @@ nav li:nth-of-type(4) {
 }
 
 .first-figure {
+  @include column (column-reverse);
   position: relative;
   bottom: 160px;
-  @include column (column-reverse);
   align-items: flex-start;
   img {
     max-width: 100%;
@@ -58,13 +58,13 @@ footer .container {
 }
 
 .flex-container {
+  @include large-screen ($width: 460px);
   @include row;
   align-items: center;
   width: 700px;
   color: $second-color;
   font-size: 0.9em;
   white-space: nowrap;
-  @include large-screen ($width: 460px);
   h3 {
     margin-right: 10px;
   }

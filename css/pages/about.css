@@ -30,10 +30,10 @@ nav li:nth-of-type(4) {
       font-size: 0.8em; }
 
 .first-figure {
-  position: relative;
-  bottom: 160px;
   display: flex;
   flex-direction: column-reverse;
+  position: relative;
+  bottom: 160px;
   align-items: flex-start; }
   .first-figure img {
     max-width: 100%;
@@ -55,9 +55,9 @@ nav li:nth-of-type(4) {
         position: relative;
         top: 120px;
         left: 480px; } }
-  @media screen and (max-width: 1120px) and (max-width: 930px) {
+  @media screen and (max-width: 1120px) and (max-width: 600px) {
     .first-figure figcaption {
-      position: relative;
+      position: static;
       left: 0;
       top: 0; } }
 

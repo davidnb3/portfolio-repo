@@ -14,26 +14,27 @@ nav li:nth-of-type(2) {
   @include row (row-reverse);
   justify-content: space-between;
   margin-bottom: 40px;
-  @include medium-screen;
   article {
+    @include large-screen;
     max-width: 460px;
     height: 540px;
-    @include large-screen;
-    @include medium-screen-height ($height: 420px);
     h3 {
       margin-top: 60px;
       line-height: 28px;
     }
-    @include paragraph;
+    p {
+      @include paragraph;
+    }
+  article:first-of-type {
   }
+}
 }
 
 .first-figure {
+  @include column (column-reverse);
   position: relative;
   bottom: 160px;
-  @include column (column-reverse);
   align-items: flex-start;
-  @include medium-screen;
   img {
     width: 440px;
     height: 560px;
@@ -66,29 +67,30 @@ nav li:nth-of-type(2) {
   @include row;
   justify-content: space-between;
   margin-bottom: 40px;
-  @include medium-screen ($margin: 180px);
   article {
+    @include large-screen;
     max-width: 460px;
     max-height: 540px;
-    @include large-screen;
-    @include medium-screen-height ($height: 400px);
     h3 {
       margin-top: 40px;
       line-height: 28px;
     }
-    @include paragraph;
+    p {
+      @include paragraph;
   }
+  article:first-of-type {
+  }
+}
 }
 
 .second-figure {
+  @include column (column-reverse);
   position: relative;
   bottom: 120px;
-  @include column (column-reverse);
-  @include medium-screen;
   img {
+    @include large-screen;
     width: 440px;
     height: 560px;
-    @include large-screen;
   }
   figcaption {
     @include row;
@@ -115,30 +117,31 @@ nav li:nth-of-type(2) {
   @include row (row-reverse);
   justify-content: space-between;
   margin-bottom: 80px;
-  @include medium-screen ($margin: 160px);
   article {
+    @include large-screen;
     max-width: 460px;
     height: 540px;
-    @include large-screen;
-    @include medium-screen-height ($height: 440px);
     h3 {
       margin-top: 80px;
       line-height: 28px;
     }
-    @include paragraph;
+    p {
+      @include paragraph;
   }
+  article:first-of-type {
+  }
+}
 }
 
 .third-figure {
+  @include column (column-reverse);
   position: relative;
   bottom: 120px;
-  @include column (column-reverse);
   align-items: flex-start;
-  @include medium-screen;
   img {
+    @include large-screen;
     width: 440px;
     height: 560px;
-    @include large-screen;
   }
   figcaption {
     @include row (row-reverse);
@@ -167,14 +170,20 @@ footer .container {
 }
 
 .flex-container {
+  @include large-screen ($width: 460px);
   @include row;
   width: 700px;
   color: $second-color;
   font-size: 0.9em;
   white-space: nowrap;
   align-items: center;
-  @include large-screen ($width: 460px);
+  @media screen and (max-width: 930px) {
+    color: $background;
+  }
   hr {
     @include hr;
+    @media screen and (max-width: 930px) {
+      border-color: $background;
+    }
   }
 }

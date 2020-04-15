@@ -57,8 +57,8 @@
       top: $top;
       left: 480px;
     }
-    @media screen and (max-width: 930px) {
-      position: relative;
+    @media screen and (max-width: 600px) {
+      position: static;
       left: 0;
       top: 0;
     }
@@ -98,12 +98,10 @@
 }
 
 @mixin paragraph {
-  p {
     margin-top: 20px;
     text-align: justify;
     line-height: 22px;
     font-size: 0.8em;
-  }
 }
 
 @mixin large-screen ($width: 420px) {
@@ -112,18 +110,33 @@
   }
 }
 
-@mixin medium-screen ($margin: 0, $position: static) {
+@mixin medium-screen-text ($width: 360px) {
   @media screen and (max-width: 930px) {
-    @include column;
-    align-items: center;
-    justify-content: center;
-    margin-top: $margin;
-    position: $position;
+    font-size: 0.9em;
+    max-width: $width;
   }
 }
 
-@mixin medium-screen-height ($height: 360px) {
-    @media screen and (max-width: 930px) {
+@mixin medium-screen-fig {
+  @media screen and (max-width: 930px) {
+    width: 360px;
+    height: 480px;
+  }
+}
+
+@mixin small-screen ($margin-top: 0, $position: static, $margin-bottom: 0) {
+  @media screen and (max-width: 600px) {
+    @include column;
+    align-items: center;
+    justify-content: center;
+    margin-top: $margin-top;
+    position: $position;
+    margin-bottom: $margin-bottom;
+  }
+}
+
+@mixin small-screen-height ($height: 360px) {
+    @media screen and (max-width: 600px) {
       height: $height;
     }
 }
