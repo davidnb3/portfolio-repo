@@ -75,7 +75,7 @@ nav li:nth-of-type(3) {
 
 .second-section {
   @include small-screen;
-  @include row (row-reverse);
+  @include row;
   justify-content: space-between;
   margin-bottom: 40px;
   article {
