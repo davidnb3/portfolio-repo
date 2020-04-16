@@ -76,6 +76,9 @@
       left: 360px;
     }
   }
+ @media screen and (max-width: 730px) {
+   position: static;
+ }
 }
 
 @mixin hr ($position: left) {
@@ -95,7 +98,7 @@
   }
 }
 
-@mixin iframe {
+@mixin iframe ($margin-bottom: 40px) {
   .overflow-container {
     overflow: hidden;
   }
@@ -106,6 +109,9 @@
     width: 440px;
     @include large-screen;
     @include medium-screen-fig;
+    @media screen and (max-width: 730px) {
+      margin-bottom: $margin-bottom;
+    }
   }
 }
 
@@ -141,19 +147,18 @@
   }
 }
 
-@mixin small-screen ($margin-top: 0, $position: static, $margin-bottom: 0) {
-  @media screen and (max-width: 600px) {
+@mixin small-screen ($margin-top: 0, $margin-bottom: 0) {
+  @media screen and (max-width: 730px) {
     @include column;
     align-items: center;
     justify-content: center;
     margin-top: $margin-top;
-    position: $position;
     margin-bottom: $margin-bottom;
   }
 }
 
-@mixin small-screen-height ($height: 360px) {
-    @media screen and (max-width: 600px) {
+@mixin small-screen-height ($height: 380px) {
+    @media screen and (max-width: 730px) {
       height: $height;
     }
 }

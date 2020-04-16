@@ -11,6 +11,7 @@ nav li:nth-of-type(4) {
 
 
 .first-section {
+  @include small-screen;
   @include row (row-reverse);
   justify-content: space-between;
   article {
@@ -35,6 +36,13 @@ nav li:nth-of-type(4) {
       font-size: 0.8em;
     }
   }
+  article:first-of-type {
+    @include small-screen-height ($height: 360px);
+    margin-top: 20px;
+  }
+  article:last-of-type {
+    @include small-screen-height ($height: 560px);
+  }
 }
 
 .first-figure {
@@ -42,10 +50,17 @@ nav li:nth-of-type(4) {
   position: relative;
   bottom: 160px;
   align-items: flex-start;
+  @media screen and (max-width: 730px) {
+    @include column;
+    position: static;
+  }
   img {
     @include medium-screen-fig;
     max-width: 100%;
     height: 560px;
+    @media screen and (max-width: 730px) {
+      margin-bottom: 40px;
+    }
   }
   figcaption {
     @include row (row-reverse);
@@ -61,6 +76,7 @@ nav li:nth-of-type(4) {
 }
 
 footer .container {
+  @include small-screen;
   @include row;
   justify-content: space-between;
 }
@@ -69,15 +85,18 @@ footer .container {
   @include large-screen ($width: 460px);
   @include medium-screen-text;
   @include row;
-  align-items: center;
   width: 700px;
   color: $second-color;
   font-size: 0.9em;
   white-space: nowrap;
-  h3 {
-    margin-right: 10px;
+  align-items: center;
+  @media screen and (max-width: 730px) {
+    color: $background;
   }
   hr {
     @include hr;
+    @media screen and (max-width: 730px) {
+      border-color: $background;
+    }
   }
 }

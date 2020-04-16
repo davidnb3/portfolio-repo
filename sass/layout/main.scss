@@ -19,6 +19,9 @@ body {
   max-width: 1100px;
 }
 
+main .container {
+  @include small-screen;
+}
 
 img, .overflow-container {
   transition: transform 600ms;
@@ -41,19 +44,37 @@ header {
     font-size: 3.5em;
     margin-top: 140px;
     line-height: 60px;
+    @media screen and (max-width: 930px) {
+      font-size: 2.8em;
+    }
+    @media screen and (max-width: 730px) {
+      font-size: 2.5em;
+    }
   }
   h2 {
     font-size: 1.6em;
     letter-spacing: 3px;
     line-height: 60px;
+    @media screen and (max-width: 930px) {
+      font-size: 1.1em;
+    }
+    @media screen and (max-width: 930px) {
+      font-size: 1em;
+    }
   }
   h3 {
     font-size: 1.6em;
     letter-spacing: 3px;
     line-height: 60px;
+    @media screen and (max-width: 930px) {
+      font-size: 1.1em;
+    }
+    @media screen and (max-width: 930px) {
+      font-size: 1em;
+    }
   }
   .container {
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 730px) {
       max-width: 800px;
       padding: 0 20px 0 20px;
     }
@@ -67,6 +88,13 @@ nav {
   ul {
     list-style: none;
     word-spacing: 10px;
+    @media screen and (max-width: 930px) {
+      font-size: 0.9em;
+    }
+    @media screen and (max-width: 930px) {
+      font-size: 0.8em;
+      word-spacing: 8px;
+    }
   }
   li {
     display: inline-block;
@@ -95,14 +123,17 @@ nav {
 
 
 footer {
-  margin-bottom: 80px;
-  @media screen and (max-width: 600px) {
+  margin-bottom: 60px;
+  @media screen and (max-width: 730px) {
     margin-bottom: 20px;
   }
   ul {
     float: right;
     list-style: none;
     word-spacing: 60px;
+    @media screen and (max-width: 930px) {
+      font-size: 0.9em;
+    }
   }
   li {
     display: inline;
@@ -115,5 +146,8 @@ footer {
       color: $main-color;
       transform: scale(1.30) rotate(1turn);
     }
+  }
+  .container {
+    @include small-screen;
   }
 }
