@@ -10,6 +10,11 @@ footer .container {
   display: flex;
   justify-content: center; }
 
+img {
+  width: 80%;
+  height: auto;
+  max-height: 520px; }
+
 .first-section {
   display: flex;
   flex-direction: row-reverse;
@@ -27,9 +32,6 @@ footer .container {
   position: relative;
   bottom: 160px;
   align-items: flex-start; }
-  .first-figure img {
-    width: 80%;
-    height: auto; }
   .first-figure a {
     text-decoration: none;
     color: inherit;
@@ -59,9 +61,6 @@ footer .container {
   align-items: flex-end;
   position: relative;
   bottom: 120px; }
-  .second-figure img {
-    width: 80%;
-    height: auto; }
   .second-figure a {
     text-decoration: none;
     color: inherit;
@@ -90,9 +89,6 @@ footer .container {
   flex-direction: column-reverse;
   position: relative;
   bottom: 120px; }
-  .third-figure img {
-    width: 80%;
-    height: auto; }
   .third-figure a {
     text-decoration: none;
     color: inherit;

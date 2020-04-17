@@ -40,10 +40,12 @@ article p {
 .flex-container {
   display: flex;
   flex-direction: row;
-  width: 45%;
+  width: 100%;
   color: #4b5258;
   font-size: 0.9em;
   white-space: nowrap; }
+  .flex-container.footer {
+    width: 45%; }
 
 header {
   padding-bottom: 240px;

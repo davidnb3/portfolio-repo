@@ -19,6 +19,11 @@ footer .container {
   justify-content: center;
 }
 
+img {
+  width: 80%;
+  height: auto;
+  max-height: 520px;
+}
 
 // Layout //
 
@@ -42,10 +47,6 @@ footer .container {
   position: relative;
   bottom: 160px;
   align-items: flex-start;
-  img {
-    width: 80%;
-    height: auto;
-  }
     a {
       text-decoration: none;
       color: inherit;
@@ -81,10 +82,6 @@ footer .container {
   align-items: flex-end;
   position: relative;
   bottom: 120px;
-  img {
-    width: 80%;
-    height: auto;
-  }
     a {
       text-decoration: none;
       color: inherit;
@@ -119,10 +116,6 @@ footer .container {
   flex-direction: column-reverse;
   position: relative;
   bottom: 120px;
-  img {
-    width: 80%;
-    height: auto;
-  }
     a {
       text-decoration: none;
       color: inherit;

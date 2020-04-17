@@ -58,10 +58,13 @@ article p {
 .flex-container {
   display: flex;
   flex-direction: row;
-  width: 45%;
+  width: 100%;
   color: $second-color;
   font-size: 0.9em;
   white-space: nowrap;
+  &.footer {
+    width: 45%;
+  }
 }
 
 
