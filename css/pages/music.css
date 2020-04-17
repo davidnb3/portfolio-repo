@@ -6,63 +6,8 @@ nav li:nth-of-type(3) {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px; }
 
-.overflow-container {
-  overflow: hidden;
-  width: 80%; }
-
-iframe {
-  position: relative;
-  bottom: 4px;
-  height: 540px;
-  width: 100%; }
-
 footer .container {
   display: flex;
   justify-content: center; }
-
-.first-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 40px; }
-  .first-section article {
-    width: 45%; }
-    .first-section article h3 {
-      margin-top: 60px;
-      line-height: 28px; }
-
-.first-figure {
-  position: relative;
-  bottom: 160px;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-end; }
-  .first-figure a {
-    text-decoration: none;
-    color: inherit; }
-
-.second-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 40px; }
-  .second-section article {
-    width: 45%; }
-    .second-section article h3 {
-      margin-top: 40px;
-      line-height: 28px; }
-
-.second-figure {
-  display: flex;
-  align-items: flex-end; }
-  .second-figure a {
-    text-decoration: none;
-    color: inherit; }
-
-.third-figure {
-  align-items: flex-start; }
-  .third-figure a {
-    text-decoration: none;
-    color: inherit; }
 
 /*# sourceMappingURL=music.css.map */
