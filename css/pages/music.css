@@ -10,54 +10,32 @@ nav li:nth-of-type(3) {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px; }
 
+hr {
+  width: 100%;
+  height: 2px;
+  margin: auto;
+  border: solid 1px #4b5258; }
+  hr.left {
+    margin-left: 20px; }
+  hr.right {
+    margin-right: 20px; }
+
 .first-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 40px; }
-  @media screen and (max-width: 730px) {
-    .first-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-top: 0;
-      margin-bottom: 0; } }
   .first-section article {
     max-width: 460px;
     height: 540px; }
-    @media screen and (max-width: 1120px) {
-      .first-section article {
-        max-width: 420px; } }
-    @media screen and (max-width: 930px) {
-      .first-section article {
-        font-size: 0.8em;
-        max-width: 340px; } }
-    @media screen and (max-width: 930px) {
-      .first-section article {
-        height: 420px; } }
     .first-section article h3 {
       margin-top: 60px;
       line-height: 28px; }
-      @media screen and (max-width: 930px) {
-        .first-section article h3 {
-          margin-top: 20px; } }
-      @media screen and (max-width: 730px) {
-        .first-section article h3 {
-          margin-top: 0; } }
     .first-section article p {
       margin-top: 20px;
       text-align: justify;
       line-height: 22px;
       font-size: 0.8em; }
-  .first-section article:first-of-type {
-    margin-top: 20px; }
-    @media screen and (max-width: 730px) {
-      .first-section article:first-of-type {
-        height: 360px; } }
-  @media screen and (max-width: 730px) {
-    .first-section article:last-of-type {
-      height: 600px; } }
 
 .first-figure {
   position: relative;
@@ -82,11 +60,6 @@ nav li:nth-of-type(3) {
     @media screen and (max-width: 730px) {
       .first-figure iframe {
         margin-bottom: 40px; } }
-  @media screen and (max-width: 730px) {
-    .first-figure {
-      display: flex;
-      flex-direction: column;
-      position: static; } }
   .first-figure figcaption {
     display: flex;
     flex-direction: row;
@@ -96,81 +69,26 @@ nav li:nth-of-type(3) {
     position: relative;
     top: 120px;
     right: 640px; }
-    @media screen and (max-width: 1120px) {
-      .first-figure figcaption {
-        width: 420px;
-        white-space: nowrap;
-        color: #4b5258;
-        position: relative;
-        top: 120px;
-        right: 480px; } }
-    @media screen and (max-width: 930px) {
-      .first-figure figcaption {
-        width: 340px;
-        white-space: nowrap;
-        color: #4b5258;
-        position: relative;
-        top: 120px;
-        right: 360px; } }
-    @media screen and (max-width: 730px) {
-      .first-figure figcaption {
-        position: static; } }
-    .first-figure figcaption hr {
-      width: 100%;
-      height: 2px;
-      margin: auto;
-      margin-left: 20px;
-      border: solid 1px #4b5258; }
     .first-figure figcaption a {
       text-decoration: none;
       color: inherit; }
 
 .second-section {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 40px; }
-  @media screen and (max-width: 730px) {
-    .second-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-top: 0;
-      margin-bottom: 0; } }
   .second-section article {
     max-width: 460px;
     max-height: 540px; }
-    @media screen and (max-width: 1120px) {
-      .second-section article {
-        max-width: 420px; } }
-    @media screen and (max-width: 930px) {
-      .second-section article {
-        font-size: 0.8em;
-        max-width: 340px; } }
-    @media screen and (max-width: 930px) {
-      .second-section article {
-        height: 420px; } }
     .second-section article h3 {
       margin-top: 40px;
       line-height: 28px; }
-      @media screen and (max-width: 930px) {
-        .second-section article h3 {
-          margin-top: 0; } }
-      @media screen and (max-width: 730px) {
-        .second-section article h3 {
-          margin-top: 20px; } }
     .second-section article p {
       margin-top: 20px;
       text-align: justify;
       line-height: 22px;
       font-size: 0.8em; }
-  @media screen and (max-width: 730px) {
-    .second-section article:first-of-type {
-      height: 500px; } }
-  @media screen and (max-width: 730px) {
-    .second-section article:last-of-type {
-      height: 560px; } }
 
 .second-figure {
   display: flex;
@@ -195,11 +113,6 @@ nav li:nth-of-type(3) {
     @media screen and (max-width: 730px) {
       .second-figure iframe {
         margin-bottom: 40px; } }
-  @media screen and (max-width: 730px) {
-    .second-figure {
-      display: flex;
-      flex-direction: column;
-      position: static; } }
   .second-figure figcaption {
     display: flex;
     flex-direction: row-reverse;
@@ -209,31 +122,6 @@ nav li:nth-of-type(3) {
     position: relative;
     top: 60px;
     left: 500px; }
-    @media screen and (max-width: 1120px) {
-      .second-figure figcaption {
-        width: 420px;
-        white-space: nowrap;
-        color: #4b5258;
-        position: relative;
-        top: 60px;
-        left: 480px; } }
-    @media screen and (max-width: 930px) {
-      .second-figure figcaption {
-        width: 340px;
-        white-space: nowrap;
-        color: #4b5258;
-        position: relative;
-        top: 60px;
-        left: 360px; } }
-    @media screen and (max-width: 730px) {
-      .second-figure figcaption {
-        position: static; } }
-    .second-figure figcaption hr {
-      width: 100%;
-      height: 2px;
-      margin: auto;
-      margin-right: 20px;
-      border: solid 1px #4b5258; }
     .second-figure figcaption a {
       text-decoration: none;
       color: inherit; }
@@ -261,11 +149,6 @@ nav li:nth-of-type(3) {
     @media screen and (max-width: 730px) {
       .third-figure iframe {
         margin-bottom: 40px; } }
-  @media screen and (max-width: 730px) {
-    .third-figure {
-      display: flex;
-      flex-direction: column;
-      position: static; } }
   .third-figure figcaption {
     display: flex;
     flex-direction: row;
@@ -275,31 +158,6 @@ nav li:nth-of-type(3) {
     position: relative;
     top: 100px;
     right: 640px; }
-    @media screen and (max-width: 1120px) {
-      .third-figure figcaption {
-        width: 420px;
-        white-space: nowrap;
-        color: #4b5258;
-        position: relative;
-        top: 100px;
-        right: 480px; } }
-    @media screen and (max-width: 930px) {
-      .third-figure figcaption {
-        width: 340px;
-        white-space: nowrap;
-        color: #4b5258;
-        position: relative;
-        top: 100px;
-        right: 360px; } }
-    @media screen and (max-width: 730px) {
-      .third-figure figcaption {
-        position: static; } }
-    .third-figure figcaption hr {
-      width: 100%;
-      height: 2px;
-      margin: auto;
-      margin-left: 20px;
-      border: solid 1px #4b5258; }
     .third-figure figcaption a {
       text-decoration: none;
       color: inherit; }
@@ -308,14 +166,6 @@ footer .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  @media screen and (max-width: 730px) {
-    footer .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-top: 0;
-      margin-bottom: 0; } }
 
 .flex-container {
   display: flex;
@@ -325,24 +175,8 @@ footer .container {
   font-size: 0.9em;
   white-space: nowrap;
   align-items: center; }
-  @media screen and (max-width: 1120px) {
-    .flex-container {
-      max-width: 460px; } }
-  @media screen and (max-width: 930px) {
-    .flex-container {
-      font-size: 0.8em;
-      max-width: 340px; } }
   @media screen and (max-width: 730px) {
     .flex-container {
       color: #151515; } }
-  .flex-container hr {
-    width: 100%;
-    height: 2px;
-    margin: auto;
-    margin-left: 20px;
-    border: solid 1px #4b5258; }
-    @media screen and (max-width: 730px) {
-      .flex-container hr {
-        border-color: #151515; } }
 
 /*# sourceMappingURL=music.css.map */

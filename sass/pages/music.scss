@@ -1,37 +1,50 @@
 @import '../utils/mixins.scss';
 @import '../utils/variables.scss';
 
-@include header-padding;
-@include header-trans;
+
+// Components //
+
+header {
+  padding-bottom: 300px;
+  margin-bottom: 80px;
+}
+header .container > h1, header .container > h2 {
+  transform: scale(1);
+  transition-duration: 2s;
+}
 
 nav li:nth-of-type(3) {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
 }
 
+hr {
+  width: 100%;
+  height: 2px;
+  margin: auto;
+  border: solid 1px $second-color;
+  &.left {
+    margin-left: 20px;
+  }
+  &.right {
+    margin-right: 20px;
+  }
+}
+
+
+// Layout //
 
 .first-section {
-  @include small-screen;
-  @include row;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 40px;
   article {
-    @include large-screen;
-    @include medium-screen-text;
     max-width: 460px;
     height: 540px;
-    @media screen and (max-width: 930px) {
-      height: 420px;
-    }
     h3 {
       margin-top: 60px;
       line-height: 28px;
-      @media screen and (max-width: 930px) {
-        margin-top: 20px;
-      }
-      @media screen and (max-width: 730px) {
-        margin-top: 0;
-      }
     }
     p {
       margin-top: 20px;
@@ -40,31 +53,19 @@ nav li:nth-of-type(3) {
       font-size: 0.8em;
     }
   }
-  article:first-of-type {
-    @include small-screen-height ($height: 360px);
-    margin-top: 20px;
-  }
-  article:last-of-type {
-    @include small-screen-height ($height: 600px);
-  }
 }
 
 .first-figure {
   position: relative;
   bottom: 160px;
-  @include column (column-reverse);
+  display: flex;
+  flex-direction: column-reverse;
   align-items: flex-start;
   @include iframe;
-  @media screen and (max-width: 730px) {
-    @include column;
-    position: static;
-  }
   figcaption {
-    @include row;
+    display: flex;
+    flex-direction: row;
     @include figcaption ($top: 120px);
-    hr {
-      @include hr;
-    }
     a {
       text-decoration: none;
       color: inherit;
@@ -74,27 +75,16 @@ nav li:nth-of-type(3) {
 
 
 .second-section {
-  @include small-screen;
-  @include row;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 40px;
   article {
-    @include large-screen;
-    @include medium-screen-text;
     max-width: 460px;
     max-height: 540px;
-    @media screen and (max-width: 930px) {
-      height: 420px;
-    }
     h3 {
       margin-top: 40px;
       line-height: 28px;
-      @media screen and (max-width: 930px) {
-        margin-top: 0;
-      }
-      @media screen and (max-width: 730px) {
-        margin-top: 20px;
-      }
     }
     p {
       margin-top: 20px;
@@ -103,30 +93,19 @@ nav li:nth-of-type(3) {
       font-size: 0.8em;
     }
   }
-  article:first-of-type {
-    @include small-screen-height ($height: 500px);
-  }
-  article:last-of-type {
-    @include small-screen-height ($height: 560px);
-  }
 }
 
 .second-figure {
-  @include column (column-reverse);
+  display: flex;
+  flex-direction: column-reverse;
   @include iframe;
   position: relative;
   bottom: 100px;
   align-items: flex-start;
-  @media screen and (max-width: 730px) {
-    @include column;
-    position: static;
-  }
   figcaption {
-    @include row (row-reverse);
+    display: flex;
+    flex-direction: row-reverse;
     @include figcaption ($direction: row-reverse);
-    hr {
-      @include hr ($position: right);
-    }
     a {
       text-decoration: none;
       color: inherit;
@@ -136,21 +115,16 @@ nav li:nth-of-type(3) {
 
 
 .third-figure {
-  @include column (column-reverse);
+  display: flex;
+  flex-direction: column-reverse;
   @include iframe;
   position: relative;
   bottom: 120px;
   align-items: flex-start;
-  @media screen and (max-width: 730px) {
-    @include column;
-    position: static;
-  }
   figcaption {
-    @include row;
+    display: flex;
+    flex-direction: row;
     @include figcaption ($top: 100px);
-    hr {
-      @include hr;
-    }
     a {
       text-decoration: none;
       color: inherit;
@@ -159,15 +133,14 @@ nav li:nth-of-type(3) {
 }
 
 footer .container {
-  @include small-screen;
-  @include row;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .flex-container {
-  @include large-screen ($width: 460px);
-  @include medium-screen-text;
-  @include row;
+  display: flex;
+  flex-direction: row;
   width: 700px;
   color: $second-color;
   font-size: 0.9em;
@@ -175,11 +148,5 @@ footer .container {
   align-items: center;
   @media screen and (max-width: 730px) {
     color: $background;
-  }
-  hr {
-    @include hr;
-    @media screen and (max-width: 730px) {
-      border-color: $background;
-    }
   }
 }

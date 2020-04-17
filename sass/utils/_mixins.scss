@@ -1,27 +1,4 @@
-@mixin column ($direction: column){
-  display: flex;
-  flex-direction: $direction;
-}
 
-@mixin row ($direction: row){
-  display: flex;
-  flex-direction: $direction;
-}
-
-
-@mixin header-padding {
-  header {
-    padding-bottom: 300px;
-    margin-bottom: 80px;
-  }
-}
-
-@mixin header-trans {
-  header .container > h1, header .container > h2 {
-    transform: scale(1);
-    transition-duration: 2s;
-  }
-}
 
 @mixin figcaption ($direction: row, $top: 60px){
   @if (($direction) == row) {
@@ -40,63 +17,8 @@
     top: $top;
     left: 500px;
   }
-  @media screen and (max-width: 1120px) {
-    @if (($direction) == row) {
-      width: 420px;
-      white-space: nowrap;
-      color: $second-color;
-      position: relative;
-      top: $top;
-      right: 480px;
-    }
-    @else {
-      width: 420px;
-      white-space: nowrap;
-      color: $second-color;
-      position: relative;
-      top: $top;
-      left: 480px;
-    }
-  }
-  @media screen and (max-width: 930px) {
-    @if (($direction) == row) {
-      width: 340px;
-      white-space: nowrap;
-      color: $second-color;
-      position: relative;
-      top: $top;
-      right: 360px;
-    }
-    @else {
-      width: 340px;
-      white-space: nowrap;
-      color: $second-color;
-      position: relative;
-      top: $top;
-      left: 360px;
-    }
-  }
- @media screen and (max-width: 730px) {
-   position: static;
- }
 }
 
-@mixin hr ($position: left) {
-  @if (($position) == left) {
-    width: 100%;
-    height: 2px;
-    margin: auto;
-    margin-left: 20px;
-    border: solid 1px $second-color;
-  }
-  @else {
-    width: 100%;
-    height: 2px;
-    margin: auto;
-    margin-right: 20px;
-    border: solid 1px $second-color;
-  }
-}
 
 @mixin iframe ($margin-bottom: 40px) {
   .overflow-container {
@@ -121,6 +43,14 @@
     line-height: 22px;
     font-size: 0.8em;
 }
+
+
+
+
+
+
+
+// old media query mixins //
 
 @mixin large-screen ($width: 420px) {
   @media screen and (max-width: 1120px) {
