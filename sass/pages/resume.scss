@@ -119,6 +119,7 @@ main {
   margin-top: 80px;
   margin-left: 60px;
   width: 55%;
+  height: 100%;
   section ul {
     display: flex;
     flex-direction: column;
@@ -199,12 +200,7 @@ h3:last-of-type span {
   margin-left: 20px;
 }
 
-.container-list {
-  flex: 1;
-}
-
 .container-details {
-  flex: 2;
   display: flex;
   flex-direction: column;
   line-height: 20px;

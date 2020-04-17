@@ -2,23 +2,13 @@ header {
   padding-bottom: 300px;
   margin-bottom: 80px; }
 
-header .container > h1, header .container > h2 {
-  transform: scale(1);
-  transition-duration: 2s; }
-
 nav li:nth-of-type(5) {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px; }
 
-hr {
-  width: 100%;
-  height: 2px;
-  margin: auto;
-  border: solid 1px #4b5258; }
-  hr.left {
-    margin-left: 20px; }
-  hr.right {
-    margin-right: 20px; }
+footer .container {
+  display: flex;
+  justify-content: center; }
 
 ::placeholder {
   color: #4b5258;
@@ -85,9 +75,5 @@ button {
     transition: transform 800ms, background 800ms 200ms, color 800ms 100ms;
     background: rgba(255, 255, 255, 0.3);
     color: #ECE8E8; }
-
-footer .container {
-  display: flex;
-  justify-content: center; }
 
 /*# sourceMappingURL=contact.css.map */

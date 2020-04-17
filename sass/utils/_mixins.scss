@@ -1,5 +1,3 @@
-
-
 @mixin figcaption ($direction: row, $top: 60px){
   @if (($direction) == row) {
     width: 600px;
@@ -7,7 +5,7 @@
     color: $second-color;
     position: relative;
     top: $top;
-    right: 640px;
+    right: 500px;
   }
   @else {
     width: 600px;
@@ -17,78 +15,4 @@
     top: $top;
     left: 500px;
   }
-}
-
-
-@mixin iframe ($margin-bottom: 40px) {
-  .overflow-container {
-    overflow: hidden;
-  }
-  iframe {
-    position: relative;
-    bottom: 4px;
-    height: 560px;
-    width: 440px;
-    @include large-screen;
-    @include medium-screen-fig;
-    @media screen and (max-width: 730px) {
-      margin-bottom: $margin-bottom;
-    }
-  }
-}
-
-@mixin paragraph {
-    margin-top: 20px;
-    text-align: justify;
-    line-height: 22px;
-    font-size: 0.8em;
-}
-
-
-
-
-
-
-
-// old media query mixins //
-
-@mixin large-screen ($width: 420px) {
-  @media screen and (max-width: 1120px) {
-    max-width: ($width);
-  }
-}
-
-@mixin medium-screen {
-  @media screen and (max-width: 930px) {
-    max-width: 700px;
-  }
-}
-@mixin medium-screen-text ($font-size: 0.8em, $width: 340px) {
-  @media screen and (max-width: 930px) {
-    font-size: $font-size;
-    max-width: $width;
-  }
-}
-
-@mixin medium-screen-fig {
-  @media screen and (max-width: 930px) {
-    width: 340px;
-    height: 480px;
-  }
-}
-
-@mixin small-screen ($margin-top: 0, $margin-bottom: 0) {
-  @media screen and (max-width: 730px) {
-    @include column;
-    align-items: center;
-    justify-content: center;
-    margin-top: $margin-top;
-    margin-bottom: $margin-bottom;
-  }
-}
-
-@mixin small-screen-height ($height: 380px) {
-    @media screen and (max-width: 730px) {
-      height: $height;
-    }
 }

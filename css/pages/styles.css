@@ -1,20 +1,15 @@
-header .container > h1, header .container > h2 {
-  transform: scale(1);
-  transition-duration: 2s; }
-
 nav li:first-of-type {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px; }
 
-hr {
-  width: 100%;
-  height: 2px;
-  margin: auto;
-  border: solid 1px #4b5258; }
-  hr.left {
-    margin-left: 20px; }
-  hr.right {
-    margin-right: 20px; }
+.overflow-container {
+  overflow: hidden; }
+
+iframe {
+  position: relative;
+  bottom: 4px;
+  height: 540px;
+  width: 80%; }
 
 .flex-container {
   display: flex;
@@ -28,16 +23,10 @@ hr {
   flex-direction: row;
   justify-content: space-between; }
   .project-section article {
-    max-width: 460px;
-    height: 520px; }
+    width: 45%; }
     .project-section article h3 {
       margin-top: 80px;
       line-height: 28px; }
-    .project-section article p {
-      margin-top: 20px;
-      text-align: justify;
-      line-height: 22px;
-      font-size: 0.8em; }
 
 .project-fig {
   display: flex;
@@ -46,8 +35,8 @@ hr {
   bottom: 120px;
   align-items: flex-end; }
   .project-fig img {
-    max-width: 100%;
-    height: 560px;
+    width: 80%;
+    height: auto;
     margin-bottom: 100px; }
   .project-fig figcaption {
     display: flex;
@@ -71,40 +60,16 @@ hr {
 .music-section {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
-  height: 580px; }
+  justify-content: space-between; }
   .music-section article {
-    max-width: 460px; }
+    width: 45%; }
     .music-section article h3 {
-      margin-top: 140px;
       line-height: 28px; }
-    .music-section article p {
-      margin-top: 20px;
-      text-align: justify;
-      line-height: 22px;
-      font-size: 0.8em; }
 
 .music-fig {
   position: relative;
   bottom: 60px;
   width: 460px; }
-  .music-fig .overflow-container {
-    overflow: hidden; }
-  .music-fig iframe {
-    position: relative;
-    bottom: 4px;
-    height: 560px;
-    width: 440px; }
-    @media screen and (max-width: 1120px) {
-      .music-fig iframe {
-        max-width: 420px; } }
-    @media screen and (max-width: 930px) {
-      .music-fig iframe {
-        width: 340px;
-        height: 480px; } }
-    @media screen and (max-width: 730px) {
-      .music-fig iframe {
-        margin-bottom: 0px; } }
   .music-fig figcaption {
     display: flex;
     flex-direction: row;
