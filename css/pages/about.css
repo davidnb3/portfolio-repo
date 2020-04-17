@@ -30,17 +30,8 @@ footer .container {
   .first-figure img {
     max-width: 100%;
     height: 560px; }
-  .first-figure figcaption {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    white-space: nowrap;
-    color: #4b5258;
-    position: relative;
-    top: 120px;
-    left: 500px; }
-    .first-figure figcaption a {
-      text-decoration: none;
-      color: inherit; }
+  .first-figure a {
+    text-decoration: none;
+    color: inherit; }
 
 /*# sourceMappingURL=about.css.map */

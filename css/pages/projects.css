@@ -30,26 +30,17 @@ footer .container {
   .first-figure img {
     width: 80%;
     height: auto; }
-  .first-figure figcaption {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    white-space: nowrap;
-    color: #4b5258;
-    position: relative;
-    top: 120px;
-    left: 500px; }
-    .first-figure figcaption a {
-      text-decoration: none;
-      color: inherit;
-      padding: 2px 10px 2px 10px;
-      margin-right: -10px;
-      border-radius: 10px;
-      transition: transform 600ms, background 800ms 100ms, color 800ms; }
-      .first-figure figcaption a:hover {
-        transform: scale(1.25);
-        background: rgba(255, 255, 255, 0.3);
-        color: #ECE8E8; }
+  .first-figure a {
+    text-decoration: none;
+    color: inherit;
+    padding: 2px 10px 2px 10px;
+    margin-right: -10px;
+    border-radius: 10px;
+    transition: transform 600ms, background 800ms 100ms, color 800ms; }
+    .first-figure a:hover {
+      transform: scale(1.25);
+      background: rgba(255, 255, 255, 0.3);
+      color: #ECE8E8; }
 
 .second-section {
   display: flex;
@@ -71,26 +62,17 @@ footer .container {
   .second-figure img {
     width: 80%;
     height: auto; }
-  .second-figure figcaption {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    white-space: nowrap;
-    color: #4b5258;
-    position: relative;
-    top: 60px;
-    right: 500px; }
-    .second-figure figcaption a {
-      text-decoration: none;
-      color: inherit;
-      padding: 2px 10px 2px 10px;
-      margin-left: -10px;
-      border-radius: 10px;
-      transition: transform 600ms, background 800ms 100ms, color 800ms; }
-      .second-figure figcaption a:hover {
-        transform: scale(1.25);
-        background: rgba(255, 255, 255, 0.3);
-        color: #ECE8E8; }
+  .second-figure a {
+    text-decoration: none;
+    color: inherit;
+    padding: 2px 10px 2px 10px;
+    margin-left: -10px;
+    border-radius: 10px;
+    transition: transform 600ms, background 800ms 100ms, color 800ms; }
+    .second-figure a:hover {
+      transform: scale(1.25);
+      background: rgba(255, 255, 255, 0.3);
+      color: #ECE8E8; }
 
 .third-section {
   display: flex;
@@ -111,25 +93,16 @@ footer .container {
   .third-figure img {
     width: 80%;
     height: auto; }
-  .third-figure figcaption {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    white-space: nowrap;
-    color: #4b5258;
-    position: relative;
-    top: 100px;
-    left: 500px; }
-    .third-figure figcaption a {
-      text-decoration: none;
-      color: inherit;
-      padding: 2px 10px 2px 10px;
-      margin-right: -10px;
-      border-radius: 10px;
-      transition: transform 600ms, background 800ms 100ms, color 800ms; }
-      .third-figure figcaption a:hover {
-        transform: scale(1.25);
-        background: rgba(255, 255, 255, 0.3);
-        color: #ECE8E8; }
+  .third-figure a {
+    text-decoration: none;
+    color: inherit;
+    padding: 2px 10px 2px 10px;
+    margin-right: -10px;
+    border-radius: 10px;
+    transition: transform 600ms, background 800ms 100ms, color 800ms; }
+    .third-figure a:hover {
+      transform: scale(1.25);
+      background: rgba(255, 255, 255, 0.3);
+      color: #ECE8E8; }
 
 /*# sourceMappingURL=projects.css.map */

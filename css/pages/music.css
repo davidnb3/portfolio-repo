@@ -37,18 +37,9 @@ footer .container {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end; }
-  .first-figure figcaption {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    white-space: nowrap;
-    color: #4b5258;
-    position: relative;
-    top: 120px;
-    right: 500px; }
-    .first-figure figcaption a {
-      text-decoration: none;
-      color: inherit; }
+  .first-figure a {
+    text-decoration: none;
+    color: inherit; }
 
 .second-section {
   display: flex;
@@ -64,32 +55,14 @@ footer .container {
 .second-figure {
   display: flex;
   align-items: flex-end; }
-  .second-figure figcaption {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    white-space: nowrap;
-    color: #4b5258;
-    position: relative;
-    top: 60px;
-    left: 500px; }
-    .second-figure figcaption a {
-      text-decoration: none;
-      color: inherit; }
+  .second-figure a {
+    text-decoration: none;
+    color: inherit; }
 
 .third-figure {
   align-items: flex-start; }
-  .third-figure figcaption {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    white-space: nowrap;
-    color: #4b5258;
-    position: relative;
-    top: 100px;
-    right: 500px; }
-    .third-figure figcaption a {
-      text-decoration: none;
-      color: inherit; }
+  .third-figure a {
+    text-decoration: none;
+    color: inherit; }
 
 /*# sourceMappingURL=music.css.map */

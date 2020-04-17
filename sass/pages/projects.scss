@@ -46,10 +46,6 @@ footer .container {
     width: 80%;
     height: auto;
   }
-  figcaption {
-    display: flex;
-    flex-direction: row-reverse;
-    @include figcaption ($direction: row-reverse, $top: 120px);
     a {
       text-decoration: none;
       color: inherit;
@@ -64,7 +60,6 @@ footer .container {
       }
     }
   }
-}
 
 .second-section {
   display: flex;
@@ -90,10 +85,6 @@ footer .container {
     width: 80%;
     height: auto;
   }
-  figcaption {
-    display: flex;
-    flex-direction: row;
-    @include figcaption;
     a {
       text-decoration: none;
       color: inherit;
@@ -108,7 +99,6 @@ footer .container {
       }
     }
   }
-}
 
 .third-section {
   display: flex;
@@ -133,10 +123,6 @@ footer .container {
     width: 80%;
     height: auto;
   }
-  figcaption {
-    display: flex;
-    flex-direction: row-reverse;
-    @include figcaption ($direction: row-reverse, $top: 100px);
     a {
       text-decoration: none;
       color: inherit;
@@ -151,4 +137,3 @@ footer .container {
       }
     }
   }
-}

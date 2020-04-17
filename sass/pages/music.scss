@@ -54,16 +54,11 @@ footer .container {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
-  figcaption {
-    display: flex;
-    flex-direction: row;
-    @include figcaption ($top: 120px);
     a {
       text-decoration: none;
       color: inherit;
     }
   }
-}
 
 
 .second-section {
@@ -83,27 +78,17 @@ footer .container {
 .second-figure {
   display: flex;
   align-items: flex-end;
-  figcaption {
-    display: flex;
-    flex-direction: row-reverse;
-    @include figcaption ($direction: row-reverse);
     a {
       text-decoration: none;
       color: inherit;
     }
   }
-}
 
 
 .third-figure {
   align-items: flex-start;
-  figcaption {
-    display: flex;
-    flex-direction: row;
-    @include figcaption ($top: 100px);
     a {
       text-decoration: none;
       color: inherit;
     }
   }
-}
