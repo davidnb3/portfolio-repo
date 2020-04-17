@@ -17,24 +17,17 @@ iframe {
   position: relative;
   bottom: 4px;
   height: 540px;
-  width: 80%;
+  width: 90%;
 }
 
 
 // Layout //
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  width: 600px;
-  color: $second-color;
-  font-size: 0.9em;
-}
-
 .project-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-height: 500px;
   article {
     width: 45%;
     h3 {
@@ -59,7 +52,7 @@ iframe {
   figcaption {
     display: flex;
     flex-direction: row-reverse;
-    width: 600px;
+    width: 100%;
     white-space: nowrap;
     color: $second-color;
   }
@@ -84,9 +77,11 @@ iframe {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  height: 560px;
   article {
     width: 45%;
     h3 {
+      margin-top: 80px;
       line-height: 28px;
     }
   }
@@ -99,7 +94,7 @@ iframe {
   figcaption {
     display: flex;
     flex-direction: row;
-    width: 700px;
+    width: 100%;
     white-space: nowrap;
     color: $second-color;
     margin-top: 80px;

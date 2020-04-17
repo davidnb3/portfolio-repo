@@ -9,19 +9,13 @@ iframe {
   position: relative;
   bottom: 4px;
   height: 540px;
-  width: 80%; }
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  width: 600px;
-  color: #4b5258;
-  font-size: 0.9em; }
+  width: 90%; }
 
 .project-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  max-height: 500px; }
   .project-section article {
     width: 45%; }
     .project-section article h3 {
@@ -41,7 +35,7 @@ iframe {
   .project-fig figcaption {
     display: flex;
     flex-direction: row-reverse;
-    width: 600px;
+    width: 100%;
     white-space: nowrap;
     color: #4b5258; }
   .project-fig a {
@@ -60,10 +54,12 @@ iframe {
 .music-section {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between; }
+  justify-content: space-between;
+  height: 560px; }
   .music-section article {
     width: 45%; }
     .music-section article h3 {
+      margin-top: 80px;
       line-height: 28px; }
 
 .music-fig {
@@ -73,7 +69,7 @@ iframe {
   .music-fig figcaption {
     display: flex;
     flex-direction: row;
-    width: 700px;
+    width: 100%;
     white-space: nowrap;
     color: #4b5258;
     margin-top: 80px; }

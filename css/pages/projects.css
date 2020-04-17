@@ -13,8 +13,7 @@ footer .container {
 .first-section {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
-  margin-bottom: 40px; }
+  justify-content: space-between; }
   .first-section article {
     width: 45%;
     height: 100%; }
@@ -34,7 +33,7 @@ footer .container {
   .first-figure figcaption {
     display: flex;
     flex-direction: row-reverse;
-    width: 600px;
+    width: 100%;
     white-space: nowrap;
     color: #4b5258;
     position: relative;
@@ -55,8 +54,7 @@ footer .container {
 .second-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 40px; }
+  justify-content: space-between; }
   .second-section article {
     width: 45%;
     height: 100%; }
@@ -76,7 +74,7 @@ footer .container {
   .second-figure figcaption {
     display: flex;
     flex-direction: row;
-    width: 600px;
+    width: 100%;
     white-space: nowrap;
     color: #4b5258;
     position: relative;
@@ -97,8 +95,7 @@ footer .container {
 .third-section {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
-  margin-bottom: 20px; }
+  justify-content: space-between; }
   .third-section article {
     width: 45%;
     height: 100%; }
@@ -117,7 +114,7 @@ footer .container {
   .third-figure figcaption {
     display: flex;
     flex-direction: row-reverse;
-    width: 600px;
+    width: 100%;
     white-space: nowrap;
     color: #4b5258;
     position: relative;

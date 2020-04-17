@@ -37,6 +37,14 @@ article p {
   line-height: 22px;
   font-size: 0.8em; }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  color: #4b5258;
+  font-size: 0.9em;
+  white-space: nowrap; }
+
 header {
   padding-bottom: 240px;
   padding-top: 20px;

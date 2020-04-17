@@ -33,7 +33,7 @@ footer .container {
   .first-figure figcaption {
     display: flex;
     flex-direction: row-reverse;
-    width: 600px;
+    width: 100%;
     white-space: nowrap;
     color: #4b5258;
     position: relative;

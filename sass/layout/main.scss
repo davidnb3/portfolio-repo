@@ -55,6 +55,15 @@ article p {
   font-size: 0.8em;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  color: $second-color;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
 
 // Layout //
 

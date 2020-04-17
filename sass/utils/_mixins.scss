@@ -1,6 +1,6 @@
 @mixin figcaption ($direction: row, $top: 60px){
   @if (($direction) == row) {
-    width: 600px;
+    width: 100%;
     white-space: nowrap;
     color: $second-color;
     position: relative;
@@ -8,7 +8,7 @@
     right: 500px;
   }
   @else {
-    width: 600px;
+    width: 100%;
     white-space: nowrap;
     color: $second-color;
     position: relative;
