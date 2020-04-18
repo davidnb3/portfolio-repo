@@ -1,6 +1,6 @@
 header {
   padding-bottom: 300px;
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
 
 nav li:nth-of-type(4) {
   background: rgba(255, 255, 255, 0.3);
@@ -9,5 +9,13 @@ nav li:nth-of-type(4) {
 footer .container {
   display: flex;
   justify-content: center; }
+
+img {
+  border-radius: 100%;
+  transform: rotate(0turn);
+  transition: transform 12s;
+  transition-timing-function: cubic-bezier(0.47, 0.01, 0.34, 0.98); }
+  img:hover {
+    transform: rotate(12turn); }
 
 /*# sourceMappingURL=about.css.map */

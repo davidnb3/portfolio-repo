@@ -40,21 +40,23 @@ article p {
 img {
   width: 80%;
   height: auto;
-  margin-bottom: 100px;
+  max-height: 500px;
   position: relative;
-  bottom: 120px;
+  bottom: 80px; }
+
+.left-section img {
   float: right; }
 
 iframe {
   position: relative;
   bottom: 4px;
-  max-height: 540px;
+  max-height: 500px;
   width: 100%; }
 
 .overflow-container {
   overflow: hidden;
   position: relative;
-  bottom: 60px;
+  bottom: 80px;
   width: 80%; }
 
 nav {
@@ -111,7 +113,7 @@ header {
   flex-direction: row;
   width: 100%;
   color: #4b5258;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   white-space: nowrap; }
   .flex-container.footer {
     width: 45%; }
@@ -130,30 +132,34 @@ header {
       background: rgba(255, 255, 255, 0.3);
       color: #ECE8E8; }
 
+article .flex-container {
+  margin-bottom: 60px; }
+
 .left-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-height: 500px; }
+  max-height: 480px; }
   .left-section article {
     width: 45%; }
     .left-section article h3 {
-      line-height: 28px; }
+      line-height: 28px;
+      font-size: 1rem; }
 
 .right-section {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  max-height: 560px; }
+  max-height: 480px; }
   .right-section article {
     width: 45%; }
     .right-section article h3 {
-      line-height: 28px; }
+      line-height: 28px;
+      font-size: 1rem; }
 
 footer {
-  margin-bottom: 60px; }
+  margin-bottom: 20px; }
   footer ul {
-    float: right;
     list-style: none;
     word-spacing: 60px; }
   footer li {
@@ -165,5 +171,11 @@ footer {
     footer span:hover {
       color: #ECE8E8;
       transform: scale(1.3) rotate(1turn); }
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  footer .flex-container {
+    width: 65%; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 header {
   padding-bottom: 300px;
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
 
 nav li:nth-of-type(3) {
   background: rgba(255, 255, 255, 0.3);
@@ -9,5 +9,14 @@ nav li:nth-of-type(3) {
 footer .container {
   display: flex;
   justify-content: center; }
+
+.left-section {
+  margin-bottom: 40px; }
+
+.left-section article:last-of-type .overflow-container {
+  float: right; }
+
+.right-section article:first-of-type .overflow-container {
+  float: right; }
 
 /*# sourceMappingURL=music.css.map */

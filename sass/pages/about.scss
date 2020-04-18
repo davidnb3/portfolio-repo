@@ -6,7 +6,7 @@
 
 header {
   padding-bottom: 300px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 nav li:nth-of-type(4) {
@@ -19,5 +19,13 @@ footer .container {
   justify-content: center;
 }
 
-
+img {
+  border-radius: 100%;
+  transform: rotate(0turn);
+  transition: transform 12s;
+  transition-timing-function: cubic-bezier(.47,.01,.34,.98);
+  &:hover {
+    transform: rotate(12turn);
+  }
+}
 //Layout //
