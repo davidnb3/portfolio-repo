@@ -1,18 +1,17 @@
 @media (max-width: 800px) {
-  header {
+  header {                            /* why not entire .container */
     padding-left: 20px;
     padding-right: 20px;
   }
 
+  main .container {
+    max-width: 400px;
+  }
   .container .left-section,
   .container .right-section {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
-  }
-
-  .container .left-section article {
-    text-align: center;
   }
 
   .container article img {
@@ -25,14 +24,11 @@
     margin-bottom: 20px;
   }
 
-  .container .left-section .flex-container {
-    margin-bottom: 20px;
+  article .flex-container,
+  footer .flex-container {
+    margin-bottom: 40px;
   }
 
-  .container .right-section .flex-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
 
   /* users can't hover on phones so removing the hover */
   img:hover, .overflow-container:hover {
@@ -49,17 +45,9 @@
     width: 100%;
   }
 
-  .container .right-section {
-    margin-top: 20px;
-  }
-
-  .container .right-section .overflow-container {
-    width: 100%;
+  .container .overflow-container {
     position: relative;
     bottom: 0;
-  }
-  .container .right-section .overflow-container {
-    max-width: 400px;
     width: 100%;
     margin: auto;
   }
@@ -67,7 +55,7 @@
   .container .right-section .overflow-container iframe {
     position: relative;
     bottom: 4;
-    max-height: fit-content;
+    max-height: 500px;
     width: 100%;
   }
 
@@ -76,12 +64,15 @@
   }
 
   footer .flex-container {
-    margin-bottom: 20px;
+    width: 100%;
   }
 
   footer .container {
+    max-width: 400px;
     padding: 0 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   footer .container ul {
@@ -92,6 +83,27 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 800px) and (max-width: 1120px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 
+@media (min-width: 800px) and (max-width: 1000px) {
+  article .flex-container {
+    margin-bottom: 20px;
+  }
+  img, .overflow-container {
+    position: relative;
+    bottom: 40px;
+  }
+  header {
+    margin-bottom: 20px;
+  }
+  footer .flex-container {
+    max-width: 55%;
+  }
+  .overflow-container, iframe {
+    max-height: 430px;
+  }
 }

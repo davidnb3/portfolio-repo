@@ -6,7 +6,6 @@
 
 header {
   padding-bottom: 300px;
-  margin-bottom: 40px;
 }
 
 nav li:nth-of-type(2) {
@@ -14,9 +13,12 @@ nav li:nth-of-type(2) {
   border-radius: 10px;
 }
 
-footer .container {
-  display: flex;
-  justify-content: center;
+footer {
+  margin-top: 20px;
+  .container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 // Layout //

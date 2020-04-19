@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAMA,MAAO;EACL,cAAc,EAAE,KAAK;EACrB,aAAa,EAAE,IAAI;;AAGrB,qBAAsB;EACpB,UAAU,EAAE,wBAAwB;EACpC,aAAa,EAAE,IAAI;;AAGrB,iBAAkB;EAChB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM",
+"mappings": "AAMA,MAAO;EACL,cAAc,EAAE,KAAK;;AAGvB,qBAAsB;EACpB,UAAU,EAAE,wBAAwB;EACpC,aAAa,EAAE,IAAI;;AAGrB,MAAO;EACL,UAAU,EAAE,IAAI;EAChB,iBAAW;IACT,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,MAAM",
 "sources": ["../../sass/pages/projects.scss"],
 "names": [],
 "file": "projects.css"

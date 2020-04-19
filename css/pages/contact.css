@@ -1,6 +1,5 @@
 header {
-  padding-bottom: 300px;
-  margin-bottom: 40px; }
+  padding-bottom: 300px; }
 
 nav li:nth-of-type(5) {
   background: rgba(255, 255, 255, 0.3);

@@ -9,4 +9,10 @@ nav li:first-of-type {
   border-radius: 10px;
 }
 
+@media (min-width: 800px) and (max-width: 1000px) {
+  .overflow-container {
+    position: relative;
+    bottom: 20px;
+  }
+}
 // Layout //

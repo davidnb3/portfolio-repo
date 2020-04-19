@@ -39,7 +39,6 @@ article p {
 
 img {
   width: 80%;
-  height: auto;
   max-height: 500px;
   position: relative;
   bottom: 80px; }
@@ -51,7 +50,7 @@ iframe {
   position: relative;
   bottom: 4px;
   max-height: 500px;
-  width: 100%; }
+  max-width: 100%; }
 
 .overflow-container {
   overflow: hidden;
