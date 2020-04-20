@@ -14,5 +14,19 @@ nav li:first-of-type {
     position: relative;
     bottom: 20px;
   }
+  footer .flex-container {
+    max-width: 55%;
+  }
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .flex-container {
+    width: 65%;
+    margin-bottom: 0;
+  }
 }
 // Layout //

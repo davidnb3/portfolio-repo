@@ -5,6 +5,17 @@ nav li:first-of-type {
 @media (min-width: 800px) and (max-width: 1000px) {
   .overflow-container {
     position: relative;
-    bottom: 20px; } }
+    bottom: 20px; }
+
+  footer .flex-container {
+    max-width: 55%; } }
+footer .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  footer .container .flex-container {
+    width: 65%;
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=styles.css.map */

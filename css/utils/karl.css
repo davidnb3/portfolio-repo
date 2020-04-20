@@ -93,15 +93,15 @@
   article .flex-container {
     margin-bottom: 20px;
   }
+  article p {
+    font-size: 0.7rem;
+  }
   img, .overflow-container {
     position: relative;
     bottom: 40px;
   }
   header {
     margin-bottom: 20px;
-  }
-  footer .flex-container {
-    max-width: 55%;
   }
   .overflow-container, iframe {
     max-height: 430px;
