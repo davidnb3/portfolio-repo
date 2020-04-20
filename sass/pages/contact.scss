@@ -34,7 +34,7 @@ footer {
   margin-bottom: 80px;
 
   input {
-  width: 460px;
+  width: 40%;
   color: $main-color;
   background-color: $background;
   border: none;
@@ -56,7 +56,21 @@ footer {
   }
 }
 
-
+@media (max-width: 800px) {
+  .details {
+    flex-direction: column;
+    margin-bottom: 40px;
+    input {
+      width: 100%;
+    }
+    input:first-of-type {
+      margin-bottom: 20px;
+    }
+    footer .container {
+      padding: 0;
+    }
+  }
+}
 
 
 .message {

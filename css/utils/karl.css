@@ -2,6 +2,7 @@
   header {                            /* why not entire .container */
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 0.8rem;
   }
 
   main .container {
@@ -45,6 +46,9 @@
     width: 100%;
   }
 
+  section article:first-of-type {
+    margin-bottom: 20px;
+  }
   .container .overflow-container {
     position: relative;
     bottom: 0;
@@ -102,8 +106,15 @@
   }
   header {
     margin-bottom: 20px;
+    font-size: 0.9rem;
   }
   .overflow-container, iframe {
     max-height: 430px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 840px) {
+  article p {
+    margin-top: 10px;
   }
 }

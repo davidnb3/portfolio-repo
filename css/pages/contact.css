@@ -19,7 +19,7 @@ footer .container {
   justify-content: space-between;
   margin-bottom: 80px; }
   .details input {
-    width: 460px;
+    width: 40%;
     color: #ECE8E8;
     background-color: #151515;
     border: none;
@@ -37,6 +37,16 @@ footer .container {
       border: 2px solid #8B0000;
       border-radius: 5px; }
 
+@media (max-width: 800px) {
+  .details {
+    flex-direction: column;
+    margin-bottom: 40px; }
+    .details input {
+      width: 100%; }
+    .details input:first-of-type {
+      margin-bottom: 20px; }
+    .details footer .container {
+      padding: 0; } }
 .message textarea {
   width: 100%;
   color: #ECE8E8;

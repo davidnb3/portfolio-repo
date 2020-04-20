@@ -2,6 +2,20 @@ nav li:first-of-type {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px; }
 
+footer .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  footer .container .flex-container {
+    width: 65%; }
+    @media (min-width: 800px) {
+      footer .container .flex-container {
+        margin-bottom: 0; } }
+    @media (max-width: 800px) {
+      footer .container .flex-container {
+        width: 100%; } }
+
 @media (min-width: 800px) and (max-width: 1000px) {
   .overflow-container {
     position: relative;
@@ -9,13 +23,5 @@ nav li:first-of-type {
 
   footer .flex-container {
     max-width: 55%; } }
-footer .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; }
-  footer .container .flex-container {
-    width: 65%;
-    margin-bottom: 0; }
 
 /*# sourceMappingURL=styles.css.map */
