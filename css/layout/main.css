@@ -141,10 +141,6 @@ article .flex-container {
   max-height: 480px; }
   .left-section article {
     width: 45%; }
-    .left-section article h3 {
-      line-height: 28px;
-      font-size: 1.2rem;
-      letter-spacing: 1px; }
 
 .right-section {
   display: flex;
@@ -153,10 +149,6 @@ article .flex-container {
   max-height: 480px; }
   .right-section article {
     width: 45%; }
-    .right-section article h3 {
-      line-height: 28px;
-      font-size: 1.2rem;
-      letter-spacing: 1px; }
 
 footer {
   margin-bottom: 20px; }

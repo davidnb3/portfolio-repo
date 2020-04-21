@@ -8,9 +8,8 @@
   article .flex-container {
     margin-bottom: 20px;
   }
-  img, .overflow-container {
-    position: relative;
-    bottom: 40px;
+  article p {
+    margin-top: 30px;
   }
   header {
     margin-bottom: 20px;
@@ -118,12 +117,6 @@
   }
   article p {
     line-height: 20px;
-    font-size: 0.9rem;
-  }
-  .left-section article h3 {
-    font-size: 0.9rem;
-  }
-  .right-section article h3 {
     font-size: 0.9rem;
   }
   nav ul {
