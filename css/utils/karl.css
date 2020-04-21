@@ -33,9 +33,6 @@
     flex-direction: column;
   }
 
-  nav ul {
-    word-spacing: 0px;
-  }
   main .container {
     max-width: 400px;
   }
