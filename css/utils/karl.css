@@ -1,3 +1,27 @@
+@media (min-width: 800px) and (max-width: 1120px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  article .flex-container {
+    margin-bottom: 20px;
+  }
+  img, .overflow-container {
+    position: relative;
+    bottom: 40px;
+  }
+  header {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  .overflow-container, iframe {
+    max-height: 430px;
+  }
+}
+
+
 @media (max-width: 800px) {
   header {                            /* why not entire .container */
     padding-left: 20px;
@@ -5,6 +29,13 @@
     font-size: 0.8rem;
   }
 
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    word-spacing: 0px;
+  }
   main .container {
     max-width: 400px;
   }
@@ -80,41 +111,31 @@
   }
 
   footer .container ul {
-    display: flex;
-    justify-content: space-around;
     float: none;
-    word-spacing: normal;
   }
 }
 
-@media (min-width: 800px) and (max-width: 1120px) {
-  .container {
-    padding: 0 20px;
-  }
-}
-
-@media (min-width: 800px) and (max-width: 1000px) {
-  article .flex-container {
-    margin-bottom: 20px;
+@media (max-width: 400px) {
+  footer ul {
+    word-spacing: 40px;
   }
   article p {
-    font-size: 0.7rem;
-  }
-  img, .overflow-container {
-    position: relative;
-    bottom: 40px;
-  }
-  header {
-    margin-bottom: 20px;
+    line-height: 20px;
     font-size: 0.9rem;
   }
-  .overflow-container, iframe {
-    max-height: 430px;
+  .left-section article h3 {
+    font-size: 0.9rem;
   }
-}
-
-@media (min-width: 800px) and (max-width: 840px) {
-  article p {
-    margin-top: 10px;
+  .right-section article h3 {
+    font-size: 0.9rem;
+  }
+  nav ul {
+    font-size: 0.8em;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header h2 {
+    font-size: 1rem;
   }
 }
