@@ -1,0 +1,108 @@
+@media (min-width: 800px) and (max-width: 1120px) {
+  .container {
+    padding: 0 20px; } }
+@media (min-width: 800px) and (max-width: 1000px) {
+  article .flex-container {
+    margin-bottom: 20px; }
+
+  article p {
+    margin-top: 30px; }
+
+  header {
+    margin-bottom: 20px;
+    font-size: 0.9rem; }
+
+  .overflow-container, iframe {
+    max-height: 430px; } }
+@media (max-width: 800px) {
+  header {
+    /* why not entire .container */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.8rem; }
+
+  nav {
+    flex-direction: column; }
+
+  main .container {
+    max-width: 400px; }
+
+  .container .left-section,
+  .container .right-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px; }
+
+  .container article img {
+    position: relative;
+    bottom: 0;
+    float: none;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px; }
+
+  article .flex-container,
+  footer .flex-container {
+    margin-bottom: 40px; }
+
+  /* users can't hover on phones so removing the hover */
+  img:hover, .overflow-container:hover {
+    transform: initial; }
+
+  .container .left-section,
+  .container .right-section {
+    max-height: fit-content; }
+
+  .container .left-section article,
+  .container .right-section article {
+    width: 100%; }
+
+  section article:first-of-type {
+    margin-bottom: 20px; }
+
+  .container .overflow-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: auto; }
+
+  .container .right-section .overflow-container iframe {
+    position: relative;
+    bottom: 4;
+    max-height: 500px;
+    width: 100%; }
+
+  footer {
+    margin-bottom: 20px; }
+
+  footer .flex-container {
+    width: 100%; }
+
+  footer .container {
+    max-width: 400px;
+    padding: 0 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column; }
+
+  footer .container ul {
+    float: none; } }
+@media (max-width: 400px) {
+  footer ul {
+    word-spacing: 40px; }
+
+  article p {
+    line-height: 20px;
+    font-size: 0.9rem; }
+
+  nav ul {
+    font-size: 0.8em; }
+
+  header h1 {
+    font-size: 2.5rem; }
+
+  header h2 {
+    font-size: 1rem; } }
+
+/*# sourceMappingURL=media.css.map */

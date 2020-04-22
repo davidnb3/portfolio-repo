@@ -11,4 +11,8 @@ footer {
     display: flex;
     justify-content: center; }
 
+@media (max-width: 800px) {
+  footer {
+    margin-top: 0; } }
+
 /*# sourceMappingURL=projects.css.map */
