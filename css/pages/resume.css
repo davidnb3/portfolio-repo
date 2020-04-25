@@ -109,16 +109,17 @@ main {
     font-weight: normal;
     padding-bottom: 10px;
     font-size: 1em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 10px; }
     .flex-container > h3:hover {
       animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9);
       animation-iteration-count: 3; }
-  .flex-container a {
+  .flex-container .toggle {
     text-decoration: none;
     padding: 2px 4px 2px 4px;
     border-radius: 5px;
     transition: background-color 600ms 100ms, color 600ms, border-radius 600ms; }
-    .flex-container a:hover {
+    .flex-container .toggle:hover {
       background-color: #4b5258;
       color: #ECE8E8; }
 
@@ -151,6 +152,9 @@ h3:last-of-type span {
   display: flex;
   flex-direction: column;
   line-height: 20px; }
+
+.toggle {
+  cursor: pointer; }
 
 @media screen and (max-width: 420px) {
   .page-container {

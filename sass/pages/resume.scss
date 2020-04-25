@@ -148,12 +148,13 @@ main {
     padding-bottom: 10px;
     font-size: 1em;
     text-transform: uppercase;
+    margin-bottom: 10px;
     &:hover {
       animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);
       animation-iteration-count: 3;
     }
   }
-  a {
+  .toggle {
     text-decoration: none;
     padding: 2px 4px 2px 4px;
     border-radius: 5px;
@@ -206,6 +207,9 @@ h3:last-of-type span {
   line-height: 20px;
 }
 
+.toggle {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 420px) {
   .page-container {
