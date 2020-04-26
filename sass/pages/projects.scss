@@ -2,7 +2,8 @@
 @import '../utils/variables.scss';
 
 
-// Components //
+/* Components
+  ============================================ */
 
 header {
   padding-bottom: 300px;
@@ -21,9 +22,12 @@ footer {
   }
 }
 
+
+/* Media queries
+  ============================================ */
+
 @media (max-width: 800px) {
   footer {
     margin-top: 0;
   }
 }
-// Layout //

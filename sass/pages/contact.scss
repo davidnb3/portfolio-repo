@@ -2,7 +2,8 @@
 @import '../utils/variables.scss';
 
 
-// Components //
+/* Components
+  ============================================ */
 
 header {
   padding-bottom: 300px;
@@ -20,7 +21,9 @@ footer {
   }
 }
 
-// Layout //
+
+/* Form Layout
+  ============================================ */
 
 ::placeholder {
   color: $second-color;
@@ -55,23 +58,6 @@ footer {
     }
   }
 }
-
-@media (max-width: 800px) {
-  .details {
-    flex-direction: column;
-    margin-bottom: 40px;
-    input {
-      width: 100%;
-    }
-    input:first-of-type {
-      margin-bottom: 20px;
-    }
-    footer .container {
-      padding: 0;
-    }
-  }
-}
-
 
 .message {
   textarea {
@@ -114,5 +100,32 @@ button {
     transition: transform 800ms, background 800ms 200ms, color 800ms 100ms;
     background: rgba(255, 255, 255, 0.3);
     color: $main-color;
+  }
+}
+
+
+/* Media queries
+  ============================================ */
+  
+@media (max-width: 800px) {
+  form {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .details {
+    flex-direction: column;
+    margin-bottom: 40px;
+    input {
+      width: 100%;
+    }
+    input:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+  button {
+    width: 100%;
+  }
+  footer .container {
+    padding: 0;
   }
 }

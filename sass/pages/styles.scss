@@ -2,7 +2,8 @@
 @import '../utils/variables.scss';
 
 
-// Components //
+/* Components
+  ============================================ */
 
 nav li:first-of-type {
   background: rgba(255, 255, 255, 0.3);
@@ -24,6 +25,10 @@ footer .container {
     }
   }
 }
+
+
+/* Media queries
+  ============================================ */
 
 @media (min-width: 800px) and (max-width: 1000px) {
   .overflow-container {

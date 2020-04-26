@@ -1,3 +1,5 @@
+/* Components
+  ============================================ */
 header {
   padding-bottom: 300px; }
 
@@ -9,6 +11,8 @@ footer .container {
   display: flex;
   justify-content: center; }
 
+/* Form Layout
+  ============================================ */
 ::placeholder {
   color: #4b5258;
   opacity: 1; }
@@ -37,16 +41,6 @@ footer .container {
       border: 2px solid #8B0000;
       border-radius: 5px; }
 
-@media (max-width: 800px) {
-  .details {
-    flex-direction: column;
-    margin-bottom: 40px; }
-    .details input {
-      width: 100%; }
-    .details input:first-of-type {
-      margin-bottom: 20px; }
-    .details footer .container {
-      padding: 0; } }
 .message textarea {
   width: 100%;
   color: #ECE8E8;
@@ -84,5 +78,26 @@ button {
     transition: transform 800ms, background 800ms 200ms, color 800ms 100ms;
     background: rgba(255, 255, 255, 0.3);
     color: #ECE8E8; }
+
+/* Media queries
+  ============================================ */
+@media (max-width: 800px) {
+  form {
+    margin-left: 20px;
+    margin-right: 20px; }
+
+  .details {
+    flex-direction: column;
+    margin-bottom: 40px; }
+    .details input {
+      width: 100%; }
+    .details input:first-of-type {
+      margin-bottom: 20px; }
+
+  button {
+    width: 100%; }
+
+  footer .container {
+    padding: 0; } }
 
 /*# sourceMappingURL=contact.css.map */

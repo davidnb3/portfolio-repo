@@ -1,3 +1,5 @@
+/* Components
+  ============================================ */
 * {
   margin: 0;
   padding: 0;
@@ -58,6 +60,8 @@ iframe {
   bottom: 80px;
   width: 80%; }
 
+/* Header
+  ============================================ */
 nav {
   display: flex;
   flex-direction: row;
@@ -107,6 +111,8 @@ header {
     letter-spacing: 3px;
     line-height: 60px; }
 
+/* Mainpart
+  ============================================ */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -150,6 +156,8 @@ article .flex-container {
   .right-section article {
     width: 45%; }
 
+/* Footer
+  ============================================ */
 footer {
   margin-bottom: 20px; }
   footer ul {

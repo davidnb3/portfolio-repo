@@ -2,7 +2,8 @@
 @import '../utils/variables.scss';
 
 
-// Components //
+/* Components
+  ============================================ */
 
 header {
   padding-bottom: 300px;
@@ -25,7 +26,6 @@ footer {
   margin-bottom: 40px;
 }
 
-
 .left-section article:last-of-type .overflow-container,
 .right-section article:first-of-type .overflow-container {
   float: right;
@@ -33,5 +33,3 @@ footer {
     float: none;
   }
 }
-
-// Layout //

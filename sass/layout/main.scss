@@ -2,7 +2,8 @@
 @import '../utils/variables.scss';
 
 
-// Components //
+/* Components
+  ============================================ */
 
 * {
   margin: 0;
@@ -78,7 +79,8 @@ img {
   }
 
 
-// Layout //
+  /* Header
+    ============================================ */
 
 nav {
   display: flex;
@@ -139,6 +141,10 @@ header {
   }
 }
 
+
+/* Mainpart
+  ============================================ */
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -192,6 +198,10 @@ article .flex-container {
     width: 45%;
   }
 }
+
+
+/* Footer
+  ============================================ */
 
 footer {
   margin-bottom: 20px;
