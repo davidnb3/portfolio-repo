@@ -1,3 +1,6 @@
+/* Media queries
+  ============================================ */
+
 @media (min-width: 800px) and (max-width: 1120px) {
   .container {
     padding: 0 20px;
@@ -22,7 +25,7 @@
 
 
 @media (max-width: 800px) {
-  header {                            /* why not entire .container */
+  header {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 0.8rem;
@@ -57,8 +60,6 @@
     margin-bottom: 40px;
   }
 
-
-  /* users can't hover on phones so removing the hover */
   img:hover, .overflow-container:hover {
     transform: initial;
   }

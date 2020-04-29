@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: $main-color;
@@ -152,9 +153,6 @@ header {
   color: $second-color;
   font-size: 0.9rem;
   white-space: nowrap;
-  &.footer {
-    width: 45%;
-  }
   a {
   text-decoration: none;
   color: inherit;

@@ -120,8 +120,6 @@ header {
   color: #4b5258;
   font-size: 0.9rem;
   white-space: nowrap; }
-  .flex-container.footer {
-    width: 45%; }
   .flex-container a {
     text-decoration: none;
     color: inherit;
