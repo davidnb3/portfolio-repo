@@ -31,3 +31,10 @@ img {
     transform: rotate(12turn);
   }
 }
+
+@media (min-width: 800px) and (max-width: 1120px) {
+  main article a img {
+    margin-left: 40px;
+    margin-top: 60px;
+  }
+}
